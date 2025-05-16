@@ -169,7 +169,22 @@ nav:
       - Python3:
         - programming/Python3/getting-started-with-python3.md
         - programming/Python3/advanced-python3.md
-  - AWS: AWS/aws.md
+  - AWS: 
+    - AWS Free Tier: AWS/aws-free-tier.md
+    - Protecting the Root User: AWS/root-user.md
+    - Tutorials:
+      - AWS/tutorials/tutorials.md
+      - Basic:
+        - AWS/tutorials/basic/three-tier-architecture.md
+        - AWS/tutorials/basic/static-website-hosting.md
+      - Intermediate:
+        - AWS/tutorials/Intermediate/index-1.md
+        - AWS/tutorials/Intermediate/index-2.md
+        - AWS/tutorials/Intermediate/index-3.md
+        - AWS/tutorials/Intermediate/index-4.md
+        - AWS/tutorials/Intermediate/index-5.md
+      - Expert:
+        - AWS/tutorials/expert/advanced-iam-roles.md
   - Azure: Azure/azure.md
   - GCP: GCP/gcp.md
   - Hacking The Cloud: Hacking The Cloud/hacking-the-cloud.md
