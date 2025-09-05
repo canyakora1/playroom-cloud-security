@@ -153,7 +153,7 @@ nav:
     - Cloud basics: cloud-basics.md
     - Linux basics: linux-basics.md
     - Identity and Access Management: identity-access-management.md
-    - Secure Networking: secure-networking.md
+    - Secure Cloud Networking: secure-networking.md
     - Data Encryption and Protection: data-protection.md
     - Secure Containerization: secure-containerization.md
     - Cloud Security Certs: cloud-security-certs.md
