@@ -1,4 +1,4 @@
-![Docker](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frehansaeed.com%2Fimages%2Fhero%2FDocker-1366x768.png&f=1&nofb=1&ipt=81086964cfaa1961d62b2ea0a8ca91f55149c7507e31ad5a15e3b8849f26ccc8){ align=left }
+![Docker](/docs/assets/Dockerimg.png){ align=left }
 
 Containerization is a method of packaging software and its dependencies into a single, portable unit called a container. Containers provide a consistent and isolated environment for running applications, making it easier to deploy and manage applications across different environments.
 

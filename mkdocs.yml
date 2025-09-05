@@ -147,7 +147,6 @@ not_in_nav: |
 nav:
   - Welcome: 
     - index.md
-    - course-tracking.md
   - Cloud Security Roadmap: 
     - Getting started: cloud-security-roadmap.md
     - Cloud basics: cloud-basics.md
