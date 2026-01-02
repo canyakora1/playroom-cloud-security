@@ -1,16 +1,17 @@
 # Project information
 site_name: Playroom-cloud
-site_url: https://github.com/canyakora1
-site_author: Canyakora1
-site_description: Playroom-cloud is a cloud-based platform that allows users to create, share, and collaborate on interactive playroom experiences. It provides a user-friendly interface and a variety of tools for designing and customizing playrooms, making it easy for users to bring their ideas to life.
+site_url: https://github.com/playroom-security
+site_author: playroom security
+site_description: Playroom-cloud is platform for building next-gen cloud/ai security engineers with real world cloud security projects and methodology.
 
 # Repository
 repo_name: playroom cloud-security
-repo_url: https://github.com/canyakora1
+repo_url: https://github.com/playroom-security
 
 # Configurations
 theme:
   name: material
+  custom_dir: material/overrides
   font:
     text: Merriweather Sans
     code: Cascadia Code
@@ -51,15 +52,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: grey
-      accent: purple
+      primary: black
+      accent: indigo
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: purple
+      accent: indigo
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -69,7 +70,11 @@ plugins:
   - blog:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
- 
+
+# Hooks
+hooks:
+  - material/overrides/hooks/shortcodes.py
+  - material/overrides/hooks/translations.py 
 
   # Additional configuration
 extra:
@@ -147,15 +152,18 @@ not_in_nav: |
 nav:
   - Welcome: 
     - index.md
-  - Cloud Security Roadmap: 
-    - Getting started: cloud-security-roadmap.md
-    - Cloud basics: cloud-basics.md
-    - Linux basics: linux-basics.md
-    - Identity and Access Management: identity-access-management.md
-    - Secure Cloud Networking: secure-networking.md
-    - Data Encryption and Protection: data-protection.md
-    - Secure Containerization: secure-containerization.md
-    - Cloud Security Certs: cloud-security-certs.md
+  - blog:
+    - blog/index.md
+  - Cloud Security Roadmap:
+    - cloud-security-roadmap/index.md
+    - cloud-security-roadmap/cloud-security-roadmap.md
+    - cloud-security-roadmap/cloud-basics.md
+    - cloud-security-roadmap/linux-basics.md
+    - cloud-security-roadmap/identity-access-management.md
+    - cloud-security-roadmap/secure-networking.md
+    - cloud-security-roadmap/data-protection.md
+    - cloud-security-roadmap/secure-containerization.md
+    - cloud-security-roadmap/cloud-security-certs.md
   - Programming:
     - "Scripting":
       - programming/getting-started-with-scripting.md
@@ -171,19 +179,19 @@ nav:
   - AWS: 
     - AWS Free Tier: AWS/aws-free-tier.md
     - Protecting the Root User: AWS/root-user.md
-    - Tutorials:
-      - AWS/tutorials/tutorials.md
+    - AWS Cloud Projects:
+      - AWS/projects/projects.md
       - Basic:
-        - AWS/tutorials/basic/three-tier-architecture.md
-        - AWS/tutorials/basic/static-website-hosting.md
+        - AWS/projects/basic/three-tier-architecture.md
+        - AWS/projects/basic/static-website-hosting.md
       - Intermediate:
-        - AWS/tutorials/Intermediate/index-1.md
-        - AWS/tutorials/Intermediate/index-2.md
-        - AWS/tutorials/Intermediate/index-3.md
-        - AWS/tutorials/Intermediate/index-4.md
-        - AWS/tutorials/Intermediate/index-5.md
+        - AWS/projects/Intermediate/index-1.md
+        - AWS/projects/Intermediate/index-2.md
+        - AWS/projects/Intermediate/index-3.md
+        - AWS/projects/Intermediate/index-4.md
+        - AWS/projects/Intermediate/index-5.md
       - Expert:
-        - AWS/tutorials/expert/advanced-iam-roles.md
+        - AWS/projects/expert/advanced-iam-roles.md
   - Azure: Azure/azure.md
   - GCP: GCP/gcp.md
   - Hacking The Cloud: Hacking The Cloud/hacking-the-cloud.md
