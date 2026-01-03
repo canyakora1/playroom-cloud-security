@@ -1,3 +1,6 @@
+
+![bash](../../assets/images/bash.png)
+
 ## Bash Scripting Basics
 
 Bash is a powerful scripting language that is widely used in the Linux environment. It is a versatile language that can be used for a wide range of tasks, from automating simple tasks to complex system administration tasks.

@@ -56,5 +56,17 @@ def greet(name):
     print("Hello, " + name + "!")
 ``` 
 
+## Scripting Languages
+
+<div class="grid cards" markdown>
+
+- ![cloud-sec](../assets/images/bash.png) :octicons-arrow-right-24: __[Scripting: Bash](cloud-basics.md)__
+- ![cloud-sec](../assets/images/Python-Logo-PNG-Image.png) :octicons-arrow-right-24: __[Scripting: Python](cloud-compliance.md)__
+- ![cloud-sec](../assets/images/GO.png) :octicons-arrow-right-24: __[Scripting: Go](linux-basics.md)__
+- ![cloud-sec](../assets/images/PowerShell-Windows-Logo.jpg) :octicons-arrow-right-24: __[Scripting: Powershell](identity-access-management.md)__
+- ![cloud-sec](../assets/images/Node-js.png) :octicons-arrow-right-24: __[Scripting: NodeJS](secure-networking.md)__
+
+</div>
+
 
 

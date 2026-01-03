@@ -3,7 +3,7 @@ In today's digital landscape, cloud computing has become the backbone for countl
 
 Cloud security, in essence, is the discipline of protecting data, applications, infrastructure, and other digital assets within cloud environments. It encompasses the policies, technologies, procedures, and controls implemented to safeguard these assets from threats, vulnerabilities, and unauthorized access.
 
-![alt text](image-1.png)
+![cloud-sec](../assets/images/cloud.png)
 
 Unlike traditional on-premises security, cloud security operates within a shared responsibility model. This means that while the cloud service provider (CSP) is responsible for the security of the cloud infrastructure itself, the customer (that's you and your organization) is responsible for the security in the cloud – the data you store, the applications you run, and the configurations you implement. 
 

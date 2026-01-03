@@ -13,8 +13,8 @@ theme:
   name: material
   custom_dir: material/overrides
   font:
-    text: Merriweather Sans
-    code: Cascadia Code
+    text: Roboto
+    code: Roboto Code
   logo: assets/play-sec.png
   favicon: assets/favicon.ico
   features:
@@ -156,7 +156,8 @@ nav:
     - blog/index.md
   - Cloud Security Roadmap:
     - cloud-security-roadmap/index.md
-    - cloud-security-roadmap/cloud-security-roadmap.md
+    - cloud-security-roadmap/cloud-security.md
+    - cloud-security-roadmap/cloud-compliance.md
     - cloud-security-roadmap/cloud-basics.md
     - cloud-security-roadmap/linux-basics.md
     - cloud-security-roadmap/identity-access-management.md
@@ -179,6 +180,7 @@ nav:
   - AWS: 
     - AWS Free Tier: AWS/aws-free-tier.md
     - Protecting the Root User: AWS/root-user.md
+    - Using the AWS CLI: AWS/aws-cli.md
     - AWS Cloud Projects:
       - AWS/projects/projects.md
       - Basic:
@@ -195,7 +197,7 @@ nav:
   - Azure: Azure/azure.md
   - GCP: GCP/gcp.md
   - Hacking The Cloud: Hacking The Cloud/hacking-the-cloud.md
-copyright: Copyright &copy; 2025 Dcyberguy
+copyright: Copyright &copy; 2026 Playroom Security Inc
 
 
   

@@ -1,6 +1,6 @@
 ## Python Fundamentals
 
-![python-logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+![python-logo](../../assets/images/Python-Emblem.png)
 
 Python is a high-level, interpreted programming language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and many other applications.    
 
@@ -148,7 +148,15 @@ This script attempts to divide 10 by 0, which will raise a `ZeroDivisionError`. 
 
 
 
+## Learn Python
 
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://mimo.org" data-iframely-url="https://iframely.net/TRtlOOoe?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.udemy.com/course/100-days-of-code/" data-iframely-url="https://iframely.net/ovRCOWa1?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.netacad.com/courses/python-essentials-1" data-iframely-url="https://iframely.net/f6BKDdoA?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
 
 
 

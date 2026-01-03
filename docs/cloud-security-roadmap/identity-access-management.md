@@ -1,6 +1,10 @@
+---
+title: Identity and Access Management (IAM)
+---
+
 # Understanding Identity and Access Management (IAM)
 
-![alt text](<IAM (1).jpg>)
+![alt text](../assets/images/iam-cloud.png)
 
 
 `Identity and Access Management (IAM)` is the security discipline that enables the right individuals or entities to access the right resources at the right times and for the right reasons. In the context of cloud security, IAM is a cornerstone for protecting sensitive data and ensuring the `principle of least privilege` is enforced. It provides the framework for managing digital identities and controlling their access to cloud resources.   

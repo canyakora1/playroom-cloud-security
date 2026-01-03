@@ -1,9 +1,16 @@
-## AWS Free Tier Account
-Create an **AWS FREE Tier** account and gain hands-on experience with AWS products and services. 
 
-[AWS Free Tier Account for 12 months](https://aws.amazon.com/free/?sc_icontent=awssm-evergreen-free_tier&sc_iplace=2up&trk=ha_awssm-evergreen-free_tier&sc_ichannel=ha&sc_icampaign=evergreen-free_tier&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
+![aws account](../assets/images/AWS/aws-account.png)
 
 
-![alt text](image.png)
+Create an __AWS FREE Tier__ account and gain hands-on experience with AWS products and services. Use the below official AWS documentation (Link).
+
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://aws.amazon.com/free/" data-iframely-url="https://iframely.net/28cpbLYB?theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+
+
+
+![alt text](../assets/images/AWS/free-tier.png)
+
+
 
 Always document your labs for future references and also to impress your interviewers.

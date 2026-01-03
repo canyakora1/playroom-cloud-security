@@ -1,5 +1,5 @@
 ---
-title: Linux Funfamentals
+title: Linux Fundamentals
 ---
 
 # Linux Fundamentals
