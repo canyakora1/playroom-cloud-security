@@ -2,7 +2,7 @@
 site_name: Playroom-cloud
 site_url: https://github.com/playroom-security
 site_author: playroom security
-site_description: Playroom-cloud is platform for building next-gen cloud/ai security engineers with real world cloud security projects and methodology.
+site_description: Playroom-cloud is platform for building Next-Gen Cloud/AI security engineers with real world cloud projects and methodology.
 
 # Repository
 repo_name: playroom cloud-security
@@ -52,15 +52,15 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: indigo
+      primary: brown
+      accent: pink
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: purple
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -177,6 +177,16 @@ nav:
       - Python3:
         - programming/Python3/getting-started-with-python3.md
         - programming/Python3/advanced-python3.md
+      - Powershell:
+        - programming/Powershell/getting-started-with-powershell.md
+      - Node-JS:
+        - programming/Node-JS/getting-started-with-node-js.md
+  - Infrastructure-as-Code (IAC):
+    - "IAC":
+      - Infrastructure-as-Code/index.md
+      - Terraform:
+        - Infrastructure-as-Code/terraform/getting-started-with-terraform.md
+        - Infrastructure-as-Code/terraform/advanced-terraform.md
   - AWS: 
     - AWS Free Tier: AWS/aws-free-tier.md
     - Protecting the Root User: AWS/root-user.md
@@ -196,6 +206,7 @@ nav:
         - AWS/projects/expert/advanced-iam-roles.md
   - Azure: Azure/azure.md
   - GCP: GCP/gcp.md
+  - Kubernetes: Kubernetes/k8s.md
   - Hacking The Cloud: Hacking The Cloud/hacking-the-cloud.md
 copyright: Copyright &copy; 2026 Playroom Security Inc
 

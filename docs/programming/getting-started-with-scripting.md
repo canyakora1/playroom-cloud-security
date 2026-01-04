@@ -1,4 +1,17 @@
-## Scripting Basics
+## :fontawesome-solid-code: Scripting Languages
+
+<div class="grid cards" markdown>
+
+- ![cloud-sec](../assets/images/bash.png) :fontawesome-solid-code: __[Scripting: Bash](cloud-basics.md)__
+- ![cloud-sec](../assets/images/Python-Logo-PNG-Image.png) :fontawesome-solid-code: __[Scripting: Python](cloud-compliance.md)__
+- ![cloud-sec](../assets/images/GO.png) :fontawesome-solid-code: __[Scripting: Go](linux-basics.md)__
+- ![cloud-sec](../assets/images/PowerShell-Windows-Logo.jpg) :fontawesome-solid-code: __[Scripting: Powershell](identity-access-management.md)__
+- ![cloud-sec](../assets/images/Node-js.png) :fontawesome-solid-code: __[Scripting: NodeJS](secure-networking.md)__
+
+</div>
+
+
+## :simple-javascript: Scripting Basics
 Scripting is a powerful tool for automating tasks and automating workflows. It allows you to write scripts that can be executed on the command line or from within other scripts.
 
 There are many different scripting languages available, each with its own strengths and weaknesses. In this section, we will focus on Bash, Python and Go, which are popular scripting language used in the Linux environment.
@@ -39,7 +52,8 @@ There are many different scripting languages available, each with its own streng
     }
     ```
 
-    ## Benefits of Scripting
+
+## :material-script: Benefits of Scripting
 Scripting offers several benefits, including:   
 
 - **Automation**: Scripting allows you to automate repetitive tasks, saving time and reducing the risk of human error.
@@ -56,17 +70,6 @@ def greet(name):
     print("Hello, " + name + "!")
 ``` 
 
-## Scripting Languages
-
-<div class="grid cards" markdown>
-
-- ![cloud-sec](../assets/images/bash.png) :octicons-arrow-right-24: __[Scripting: Bash](cloud-basics.md)__
-- ![cloud-sec](../assets/images/Python-Logo-PNG-Image.png) :octicons-arrow-right-24: __[Scripting: Python](cloud-compliance.md)__
-- ![cloud-sec](../assets/images/GO.png) :octicons-arrow-right-24: __[Scripting: Go](linux-basics.md)__
-- ![cloud-sec](../assets/images/PowerShell-Windows-Logo.jpg) :octicons-arrow-right-24: __[Scripting: Powershell](identity-access-management.md)__
-- ![cloud-sec](../assets/images/Node-js.png) :octicons-arrow-right-24: __[Scripting: NodeJS](secure-networking.md)__
-
-</div>
 
 
 

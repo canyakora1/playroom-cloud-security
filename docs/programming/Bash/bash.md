@@ -1,7 +1,7 @@
 
 ![bash](../../assets/images/bash.png)
 
-## Bash Scripting Basics
+## :fontawesome-solid-code: Bash Scripting Basics
 
 Bash is a powerful scripting language that is widely used in the Linux environment. It is a versatile language that can be used for a wide range of tasks, from automating simple tasks to complex system administration tasks.
 
@@ -20,7 +20,7 @@ In this section, we will cover the basics of Bash scripting, including variables
 
 By the end of this section, you will have a solid understanding of how to write and use Bash scripts, and you will be able to automate tasks and streamline your workflow.
 
-### Variables
+### :material-variable: Variables
 
 Variables are used to store values that can be used later in the script. In Bash, variables are defined using the following syntax:
 
@@ -40,7 +40,7 @@ You can then use the variable in your script by referencing it with its name:
 echo "Hello, $name!"
 ```
 
-### Control Structures
+### :construction: Control Structures
 
 Control structures are used to control the flow of execution in a script. They allow you to make decisions and repeat blocks of code based on certain conditions.
 
@@ -63,7 +63,7 @@ fi
 
 This script checks if the value of the `name` variable is equal to "John". If it is, it prints "Hello, John!". Otherwise, it prints "Hello, stranger!".
 
-### Functions
+### :material-function: Functions
 
 Functions are reusable blocks of code that can be called from within a script. They allow you to organize your code into smaller, more manageable pieces.
 
@@ -115,7 +115,7 @@ This will print "Hello, John!".
 
 
 
-## Recommended YouTube Videos:
+## :simple-youtube: Recommended YouTube Videos:
 
 <iframe width="760" height="415" src="https://www.youtube.com/embed/PNhq_4d-5ek" title="Bash Scripting Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

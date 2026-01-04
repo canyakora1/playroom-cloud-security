@@ -1,6 +1,8 @@
-## Python Fundamentals
 
-![python-logo](../../assets/images/Python-Emblem.png)
+
+![python-logo](../../assets/images/Python-Logo-PNG-Image.png)
+
+## :fontawesome-solid-code: Python Fundamentals
 
 Python is a high-level, interpreted programming language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and many other applications.    
 
@@ -10,14 +12,14 @@ Python is a versatile language that can be used for a wide range of tasks, from 
 
 In this section, we will cover the basics of Python programming, including variables, data types, control structures, functions, and modules. We will also explore some advanced topics, such as object-oriented programming and error handling.
 
-## Sample Python Code
+## :fontawesome-solid-code: Sample Python Code
 
 ```python
 # This is a simple Python program that prints "Hello, World!"
 print("Hello, World!")
 ```
 
-### Variables and Data Types
+### :material-variable-box: Variables and Data Types
 Variables are used to store values that can be used later in the program. In Python, variables are defined using the following syntax:
 
 ```python
@@ -36,7 +38,7 @@ You can then use the variable in your program by referencing it with its name:
 print("Hello, " + name + "!")
 ```
 
-### Control Structures
+### :construction: Control Structures
 Control structures are used to control the flow of execution in a program. They allow you to make decisions and repeat blocks of code based on certain conditions.
 
 The most common control structures in Python are:
@@ -57,7 +59,7 @@ else:
 
 This script checks if the `age` variable is greater than or equal to 18. If it is, it prints "You are an adult". Otherwise, it prints "You are a minor".
 
-### Functions
+### :material-function: Functions
 Functions are reusable blocks of code that can be called from within a program. They allow you to organize your code into smaller, more manageable pieces.
 
 To define a function, you use the following syntax:
@@ -116,7 +118,7 @@ math.sqrt(16)
 
 This will calculate the square root of 16 and return 4.
 
-### Error Handling
+### :x: Error Handling
 Error handling is an important aspect of programming, as it allows you to handle unexpected situations and prevent your program from crashing. In Python, you can use the `try` and `except` statements to handle errors.
 
 The `try` statement is used to enclose the code that might raise an error. If an error occurs within the `try` block, the code execution is immediately transferred to the `except` block.
