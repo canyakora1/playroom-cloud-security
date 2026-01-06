@@ -2,11 +2,11 @@
 
 <div class="grid cards" markdown>
 
-- ![cloud-sec](../assets/images/bash.png) :fontawesome-solid-code: __[Scripting: Bash](cloud-basics.md)__
-- ![cloud-sec](../assets/images/Python-Logo-PNG-Image.png) :fontawesome-solid-code: __[Scripting: Python](cloud-compliance.md)__
-- ![cloud-sec](../assets/images/GO.png) :fontawesome-solid-code: __[Scripting: Go](linux-basics.md)__
-- ![cloud-sec](../assets/images/PowerShell-Windows-Logo.jpg) :fontawesome-solid-code: __[Scripting: Powershell](identity-access-management.md)__
-- ![cloud-sec](../assets/images/Node-js.png) :fontawesome-solid-code: __[Scripting: NodeJS](secure-networking.md)__
+- ![cloud-sec](../assets/images/bash.png) :fontawesome-solid-code: __[Scripting: Bash](../programming/Bash/bash.md)__
+- ![cloud-sec](../assets/images/Python-Logo-PNG-Image.png) :fontawesome-solid-code: __[Scripting: Python](../programming/Python3/getting-started-with-python3.md)__
+- ![cloud-sec](../assets/images/GO.png) :fontawesome-solid-code: __[Scripting: Go](../programming/Go/go.md)__
+- ![cloud-sec](../assets/images/PowerShell-Windows-Logo.jpg) :fontawesome-solid-code: __[Scripting: Powershell](../programming/Powershell/getting-started-with-powershell.md)__
+- ![cloud-sec](../assets/images/Node-js.png) :fontawesome-solid-code: __[Scripting: NodeJS](../programming/Node-JS/getting-started-with-node-js.md)__
 
 </div>
 
@@ -16,7 +16,7 @@ Scripting is a powerful tool for automating tasks and automating workflows. It a
 
 There are many different scripting languages available, each with its own strengths and weaknesses. In this section, we will focus on Bash, Python and Go, which are popular scripting language used in the Linux environment.
 
-???+ tip "**Sample Bash Script**"
+??? tip "**Sample Bash Script**"
 
     Here is a simple Bash script that prints a message to the console:
 

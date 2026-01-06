@@ -52,7 +52,7 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: brown
+      primary: black
       accent: pink
       toggle:
         icon: material/toggle-switch
@@ -187,7 +187,7 @@ nav:
       - Terraform:
         - Infrastructure-as-Code/terraform/getting-started-with-terraform.md
         - Infrastructure-as-Code/terraform/advanced-terraform.md
-  - AWS: 
+  - AWS:
     - AWS Free Tier: AWS/aws-free-tier.md
     - Protecting the Root User: AWS/root-user.md
     - Using the AWS CLI: AWS/aws-cli.md
@@ -197,7 +197,7 @@ nav:
         - AWS/projects/basic/three-tier-architecture.md
         - AWS/projects/basic/static-website-hosting.md
       - Intermediate:
-        - AWS/projects/Intermediate/index-1.md
+        - AWS/projects/Intermediate/vpc-peering.md
         - AWS/projects/Intermediate/index-2.md
         - AWS/projects/Intermediate/index-3.md
         - AWS/projects/Intermediate/index-4.md
