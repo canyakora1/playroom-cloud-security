@@ -188,11 +188,13 @@ nav:
         - Infrastructure-as-Code/terraform/getting-started-with-terraform.md
         - Infrastructure-as-Code/terraform/advanced-terraform.md
   - AWS:
+    - AWS/index.md
     - AWS Free Tier: AWS/aws-free-tier.md
     - Protecting the Root User: AWS/root-user.md
     - Using the AWS CLI: AWS/aws-cli.md
+    - AWS Organization: AWS/aws-organization.md
     - AWS Cloud Projects:
-      - AWS/projects/projects.md
+      - AWS/projects/index.md
       - Basic:
         - AWS/projects/basic/three-tier-architecture.md
         - AWS/projects/basic/static-website-hosting.md
@@ -204,6 +206,8 @@ nav:
         - AWS/projects/Intermediate/index-5.md
       - Expert:
         - AWS/projects/expert/advanced-iam-roles.md
+    - AWS Security:
+      - AWS/security/index.md
   - Azure: Azure/azure.md
   - GCP: GCP/gcp.md
   - Kubernetes: Kubernetes/k8s.md
