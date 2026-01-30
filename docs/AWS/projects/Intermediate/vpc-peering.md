@@ -1,5 +1,5 @@
 ---
-title: AWS - VPC peering
+title: VPC peering (Secure Network Connectivity)
 ---
 
 ??? info ":department_store: Fictitious Cloud Requirement Document"

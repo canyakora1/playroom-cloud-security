@@ -34,8 +34,11 @@ Check our our Github page for more helpful tips and tricks plus and detailed wal
 - Route Tables for subnet-level routing
 
 ### 📢 Step 1
+- If you haven't already, sign up for an AWS account [here](https://aws.amazon.com/free/).
+- Use the above Github link to follow the step by step instructions on how to deploy a three tier architecture on AWS.
 
 ### 🔊 Step 2
+
 
 ### 📯 Step 3
 

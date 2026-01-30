@@ -211,7 +211,18 @@ nav:
   - Azure: Azure/azure.md
   - GCP: GCP/gcp.md
   - Kubernetes: Kubernetes/k8s.md
-  - Hacking The Cloud: Hacking The Cloud/hacking-the-cloud.md
+  - Hacking The Cloud: 
+    - Hacking-the-cloud/index.md
+    - Flaws: 
+      - Hacking-the-cloud/Flaws/index.md
+      - Flaws1:
+        - Hacking-the-cloud/Flaws/Flaws1/flaws-level1.md
+        - Hacking-the-cloud/Flaws/Flaws1/flaws-level2.md
+        - Hacking-the-cloud/Flaws/Flaws1/flaws-level3.md
+        - Hacking-the-cloud/Flaws/Flaws1/flaws-level4.md
+        - Hacking-the-cloud/Flaws/Flaws1/flaws-level5.md
+        - Hacking-the-cloud/Flaws/Flaws1/flaws-level6.md
+
 copyright: Copyright &copy; 2026 Playroom Security Inc
 
 

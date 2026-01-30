@@ -20,6 +20,7 @@ authors:
 ```bash
 aws --version
 ```
+<!-- more -->
 
 ### AWS commands auto-complete (Optional)
 - If using `zshrc` shell, run the below commands:
@@ -62,8 +63,6 @@ Register-ArgumentCompleter -Native -CommandName aws -ScriptBlock {
 }
 
 ```
-
-<!-- more -->
 
 ### __Authenticating Using an IAM User's credentials for the AWS CLI__
 Use the below AWS Official documentation for steps in configuring basic setting for an IAM user and retrieving the __Access Keys__.
