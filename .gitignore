@@ -41,3 +41,7 @@ tmp
 # IDEs & Editors
 .idea
 *~
+
+.vscode
+*.sublime-project
+*.sublime-workspace
