@@ -12,8 +12,8 @@ For this final challenge, you're getting a user access key that has the Security
 ```json
 For this final challenge, you're getting a user access key that has the SecurityAudit policy attached to it.  See what else it can do and what else you might find in this AWS account.
 
-Access key ID: AKIAJFQ6E7BY57Q3OBGA<br>
-Secret: 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<b
+Access key ID: AKIAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
+Secret: S2IpymXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX<b
 
 ```
 

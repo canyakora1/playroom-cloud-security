@@ -142,8 +142,8 @@ index e3ae6dd..0000000
 --- a/access_keys.txt
 +++ /dev/null
 @@ -1,2 +0,0 @@
--access_key AKIAJ366LIPB4IJKT7SA
--secret_access_key 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
+-access_key AKIAXXXXXXXXXXXXXXXXXXXXXXXXXXX
+-secret_access_key OdNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
 Add the Access keys to your aws config and include a `profile` flaws.
