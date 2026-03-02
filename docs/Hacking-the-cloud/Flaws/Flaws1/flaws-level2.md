@@ -1,17 +1,20 @@
-
-
-# Flaws.cloud Level 2
+---
+title: Level 2
+---
 
 Status: Done
 Assign: Dcyberguy
 
 ![image.png](../../../assets/images/Flaws/level-2-banner.png)
 
+If you don't have an AWS account, click here and be redirected to the AWS page to create one. [AWS Free Tier Account creation](https://signin.aws.amazon.com/signup?request_type=register)
+
+
 I already have my AWS account configured
 
 If I tried to list the s3 bucket without credentials I get an error message.
 
-```bash
+```sh
 aws s3 ls s3://level2-c8b217a33fcf1f839f6f1f73a00a9ae7.flaws.cloud --no-sign-request
 
 An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied

@@ -204,12 +204,14 @@ nav:
         - AWS/projects/Intermediate/index-3.md
         - AWS/projects/Intermediate/index-4.md
         - AWS/projects/Intermediate/index-5.md
+        - AWS/projects/Intermediate/index-6.md
       - Expert:
         - AWS/projects/expert/advanced-iam-roles.md
     - AWS Security:
       - AWS/security/index.md
   - Azure: Azure/azure.md
   - GCP: GCP/gcp.md
+  - DevOps: DevOps/devops.md
   - Kubernetes: Kubernetes/k8s.md
   - Hacking The Cloud: 
     - Hacking-the-cloud/index.md
@@ -222,6 +224,14 @@ nav:
         - Hacking-the-cloud/Flaws/Flaws1/flaws-level4.md
         - Hacking-the-cloud/Flaws/Flaws1/flaws-level5.md
         - Hacking-the-cloud/Flaws/Flaws1/flaws-level6.md
+      - Flaws2:
+        - Hacking-the-cloud/Flaws/Flaws2/flaws2-level1.md
+        - Hacking-the-cloud/Flaws/Flaws2/flaws2-level2.md
+    - Wiz CTF:
+      - Hacking-the-cloud/Wiz-CTF/index.md
+      - Ultimate Cloud Security Championship:
+        - Hacking-the-cloud/Wiz-CTF/Ultimate-Cloud-Security-Champ/perimeter-leaks.md
+        - Hacking-the-cloud/Wiz-CTF/Ultimate-Cloud-Security-Champ/contain-me.md
 
 copyright: Copyright &copy; 2026 Playroom Security Inc
 

@@ -1,11 +1,13 @@
-# Flaws.cloud Level 5
+---
+title: Level 5
+---
 
 Status: Done
 Assign: Dcyberguy
 
 ## Level 5
 
-![image.png](image%208.png)
+![image.png](../../../assets/images/Flaws/level-5-instruction.png)
 
 There is mention of on an `EC2 has a simple HTTP only proxy on it`. Let’s check the `EC2 instance Metadata service`
 
@@ -31,8 +33,16 @@ Last-Modified: Fri, 23 Jan 2026 20:50:20 GMT
 }
 
 ```
+If using `Linux`, you can use the `export` command and add the AWS creds to your `env variable`.
 
-Manually added the above short-termed creds to my `.aws/credential` file, and it worked
+```bash
+export AWS_ACCESS_KEY_ID=your_access_key
+export AWS_SECRET_ACCESS_KEY=your_secret_key
+export AWS_SESSION_TOKEN=your_session_token
+
+```
+
+OR manually added the above short-termed creds to my `.aws/credential` file, and it worked
 
 ```json
 aws sts get-caller-identity --profile flawsv2 | jq
@@ -73,9 +83,11 @@ download: s3://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud/ddcc78ff/hint
 
 Looking at the `index.html` file, we are presented with another `AWS ACCESS KEYS`
 
-![image.png](image%209.png)
+![image.png](../../../assets/images/Flaws/git-accesskey.png)
 
 ```json
 Access key ID: AKIAJFQ6E7BY57Q3OBGA<br>
 Secret: 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<br>
 ```
+
+Head over to Level 6 --------->

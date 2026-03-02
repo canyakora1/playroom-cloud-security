@@ -1,11 +1,11 @@
-
-
-# Flaws.cloud Level 4
+---
+title: Level 4
+---
 
 Status: Done
 Assign: Dcyberguy
 
-![image.png](image%202.png)
+![image.png](../../../assets/images/Flaws/level-4-banner.png)
 
 We can see the Web application is running on an `EC2`. There is also a `snapshot` that possibly has some credentials that was used when Nginx was configured.
 
@@ -214,11 +214,11 @@ aws ec2 describe-snapshot-attribute \
 
 The way we can do this, is by creating a `Virtual machine` in our AWS account and attaching the above AWS managed snapshot.
 
-![image.png](image%203.png)
+![image.png](../../../assets/images/Flaws/EBS-Volume.png)
 
 Attached the EBS snapshot
 
-![image.png](image%204.png)
+![image.png](../../../assets/images/Flaws/ec2-instance.png)
 
 Login to the EC2 Instance
 
@@ -306,8 +306,8 @@ htpasswd -b /etc/nginx/.htpasswd flaws nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M
 
 Nice I found creds: Username: `flaws` and Password: `nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M`
 
-![image.png](image%205.png)
+![image.png](../../../assets/images/Flaws/Level-4-user-password.png)
 
-![image.png](image%206.png)
+![image.png](../../../assets/images/Flaws/level-5-banner.png)
 
-[](http://level5-d2891f604d2061b6977c2481b0c8333e.flaws.cloud/243f422c/)
+Head to Level 5 ------->

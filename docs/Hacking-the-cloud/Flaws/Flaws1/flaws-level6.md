@@ -1,4 +1,6 @@
-# Flaws.cloud Level 6
+---
+title: Level 6
+---
 
 Status: Done
 Assign: Dcyberguy
@@ -265,4 +267,4 @@ Nice, I get a link to go the below link.
 
 [](http://theend-797237e8ada164bf9f12cebf93b282cf.flaws.cloud/d730aa2b)
 
-![image.png](image%207.png)
+![image.png](../../../assets/images/Flaws/The-end-banner.png)

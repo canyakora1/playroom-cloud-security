@@ -1,6 +1,6 @@
-
-
-# Flaws.cloud Level 3
+---
+title: Level 3
+---
 
 Status: Done
 Assign: Dcyberguy
@@ -25,59 +25,11 @@ ETag: "5a36dafda1c9899804518fae71c9461a"
 Content-Type: text/html
 Content-Length: 1861
 Server: AmazonS3
-
-<html>
-    <head>
-        <title>flAWS - Level 3</title>
-        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-        <style>
-            body { font-family: Andale Mono, monospace; }
-            img { margin: 10px; display: block; margin-left: auto; margin-right: auto; }
-        </style>
-    </head>
-<body 
-  text="#00d000" 
-  bgcolor="#000000"  
-  style="max-width:800px; margin-left:auto ;margin-right:auto"
-  vlink="#00ff00" link="#00ff00">
-<center>
-<pre>
- _____  _       ____  __    __  _____
-|     || |     /    ||  |__|  |/ ___/
-|   __|| |    |  o  ||  |  |  (   \_ 
-|  |_  | |___ |     ||  |  |  |\__  |
-|   _] |     ||  _  ||  `  '  |/  \ |
-|  |   |     ||  |  | \      / \    |
-|__|   |_____||__|__|  \_/\_/   \___|
-</pre>
-<h1>flAWS - Level 3</h1>
-</center>
-
-<h3>Lesson learned</h3>
-Similar to opening permissions to "Everyone", people accidentally open permissions to "Any Authenticated AWS User".  They might mistakenly think this will only be users of their account, when in fact it means anyone that has an AWS account.
-
-<h4>Examples of this problem</h4>
-<ul> 
-  <li>Open permissions for authenticated AWS user on Shopify (<a href="https://hackerone.com/reports/98819">link</a>)
-</ul>
-
-<h3>Avoiding the mistake</h3>
-Only open permissions to specific AWS users.
-
-<img style="max-width:500px" src="./authenticated_users.png">
-
-This screenshot is from the webconsole in 2017. This setting can no longer be set in the webconsole, but the SDK and third-party tools sometimes allow it.
-
-<hr size=3 color="#00d000" />
-<h1>Level 3</h1>
-The next level is fairly similar, with a slight twist.  Time to find your first AWS key! I bet you'll find something that will let you list what other buckets are.
-
-<p>For hints, see <a href="./hint1.html">Hint 1</a>
-
-<br><br><br><br><br><br><br><br><br><br><br><br>* Connection #0 to host level3-9afd3927f195e10225021a578e6f78df.flaws.cloud left intact
+<< SNIP FOR BREVITY >>
 ```
+## Enumeration:
 
-Looking at the s3 bucket for LEVEL 3. I see at folder `.git`. That should 
+Looking at the Amazon s3 bucket for `LEVEL 3`. I see at folder called `.git`. That is interesting, maybe we might find somehting juicey in there.
 
 ```bash
 aws s3 ls s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud
@@ -127,7 +79,7 @@ download: s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/.git/objects/
 download: s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/.git/objects/76/e4934c9de40e36f09b4e5538236551529f723c to objects/76/e4934c9de40e36f09b4e5538236551529f723c
 ```
 
-List the contents
+List the contents of that downloaded `.git` folder
 
 ```bash
 ls -l
@@ -205,7 +157,7 @@ Default output format [None]: json
 
 ```
 
-Check what user is this. Like the linux `whomi`
+Check what user is this. Like the linux `whoami`. We are now the `backup` user. 
 
 ```bash
 aws sts get-caller-identity --profile flaws
@@ -269,3 +221,5 @@ aws s3 ls --profile flaws
 \ No newline at end of file
 
 ```
+
+Head over to Level 4 -------->
