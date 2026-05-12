@@ -6,16 +6,16 @@ title: Amazon Web Services (AWS)
 
 <div class="grid cards" markdown>
 
-- :fontawesome-brands-aws: [__AWS Free Tier__](aws-cli.md)
+- :material-aws: [__AWS Free Tier__](aws-cli.md)
 { .card }
 
-- :fontawesome-brands-aws: [__Protecting the Root User__](root-user.md)
+- :material-aws: [__Protecting the Root User__](root-user.md)
 { .card }
 
-- :fontawesome-brands-aws: [__Using the AWS CLI__](aws-cli.md)
+- :material-aws: [__Using the AWS CLI__](aws-cli.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Organization__](aws-organization.md)
+- :material-aws: [__AWS Organization__](aws-organization.md)
 { .card }
 
 </div>
@@ -26,28 +26,28 @@ All documentations, code snippets, diagrams and wlakthroughs for the above lab i
 
 <div class="grid cards" markdown>
 
-- :fontawesome-brands-aws: [__AWS Labs: Static Web Hosting__](./projects/basic/static-website-hosting.md)
+- :material-aws: [__AWS Labs: Static Web Hosting__](./projects/basic/static-website-hosting.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Labs: Three Tier Architecture__](./projects/basic/three-tier-architecture.md)
+- :material-aws: [__AWS Labs: Three Tier Architecture__](./projects/basic/three-tier-architecture.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Labs: Secured Multi tenant SAAS Platform__](./projects/Intermediate/index-2.md)
+- :material-aws: [__AWS Labs: Secured Multi tenant SAAS Platform__](./projects/Intermediate/index-2.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Labs: Event Driven Application__](./projects/Intermediate/index-3.md)
+- :material-aws: [__AWS Labs: Event Driven Application__](./projects/Intermediate/index-3.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Labs: Highly Available Website deployment__](./projects/Intermediate/index-4.md)
+- :material-aws: [__AWS Labs: Highly Available Website deployment__](./projects/Intermediate/index-4.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Labs: Three Tier Architecture__](root-user.md)
+- :material-aws: [__AWS Labs: Three Tier Architecture__](root-user.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Labs: Cloud Native CICD Platform__](./projects/Intermediate/index-5.md)
+- :material-aws: [__AWS Labs: Cloud Native CICD Platform__](./projects/Intermediate/index-5.md)
 { .card }
 
-- :fontawesome-brands-aws: [__AWS Labs: Real-Time Log Analytics & Security Monitoring Platform__](./projects/Intermediate/index-6.md)
+- :material-aws: [__AWS Labs: Real-Time Log Analytics & Security Monitoring Platform__](./projects/Intermediate/index-6.md)
 { .card }
 
 </div>

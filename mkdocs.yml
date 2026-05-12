@@ -13,8 +13,8 @@ theme:
   name: material
   custom_dir: material/overrides
   font:
-    text: Roboto
-    code: Roboto Code
+    text: Inter
+    code: Cascadia Code
   logo: assets/play-sec.png
   favicon: assets/favicon.ico
   features:
@@ -23,28 +23,19 @@ theme:
     - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.code.select
-    # - content.footnote.tooltips
-    # - content.tabs.link
+    - content.code.select
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.prune
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    - toc.integrate
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -52,18 +43,22 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: pink
+      primary: white
+      accent: purple
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: purple
+      accent: blue
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+
+# Custom stylesheets
+extra_css:
+  - stylesheets/extra.css
 
 # Plugins
 plugins:
@@ -112,8 +107,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      #emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      #emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -205,8 +200,6 @@ nav:
         - AWS/projects/Intermediate/index-4.md
         - AWS/projects/Intermediate/index-5.md
         - AWS/projects/Intermediate/index-6.md
-      - Expert:
-        - AWS/projects/expert/advanced-iam-roles.md
     - AWS Security:
       - AWS/security/index.md
   - Azure: Azure/azure.md

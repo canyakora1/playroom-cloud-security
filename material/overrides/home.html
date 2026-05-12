@@ -1,25 +1,135 @@
-{#-
-  This file was automatically generated - do not edit
--#}
 {% extends "main.html" %}
 {% block tabs %}
   {{ super() }}
-  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <style>
+    .md-header{position:initial}
+    .md-main__inner{margin:0}
+    .md-content{display:none}
+    @media screen and (min-width:60em){.md-sidebar--secondary{display:none}}
+    @media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}
+  </style>
   <section class="mdx-container">
     <div class="md-grid md-typeset">
+      <!-- Hero Section -->
       <div class="mdx-hero">
-        <div class="mdx-hero__image">
-          <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
-        </div>
         <div class="mdx-hero__content">
-          <h1>Cloud security documentation for Security Engineers</h1>
-          <p>{{ config.site_description }}. Protecting cloud environments.</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-            Quick start
+          <h1>Cloud Security Documentation</h1>
+          <p class="mdx-hero__subtitle">Master cloud security, infrastructure, and DevOps practices for AWS, Azure, and GCP</p>
+          <div class="mdx-hero__buttons">
+            <a href="cloud-security-roadmap/" class="md-button md-button--primary">
+              Start Learning Path
+            </a>
+            <a href="{{ config.repo_url }}" title="GitHub repository" class="md-button md-button--secondary" target="_blank" rel="noopener">
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistics Section -->
+      <div class="mdx-stats">
+        <div class="mdx-stat-item">
+          <div class="mdx-stat-value">80+</div>
+          <div class="mdx-stat-label">Comprehensive Guides</div>
+        </div>
+        <div class="mdx-stat-item">
+          <div class="mdx-stat-value">3</div>
+          <div class="mdx-stat-label">Cloud Platforms</div>
+        </div>
+        <div class="mdx-stat-item">
+          <div class="mdx-stat-value">5+</div>
+          <div class="mdx-stat-label">Programming Languages</div>
+        </div>
+        <div class="mdx-stat-item">
+          <div class="mdx-stat-value">100%</div>
+          <div class="mdx-stat-label">Open Source</div>
+        </div>
+      </div>
+
+      <!-- Learning Paths Section -->
+      <div class="mdx-section">
+        <h2>Choose Your Learning Path</h2>
+        <div class="mdx-cards">
+          <a href="cloud-security-roadmap/" class="mdx-card mdx-card--blue">
+            <div class="mdx-card__icon">☁️</div>
+            <div class="mdx-card__title">Cloud Basics</div>
+            <div class="mdx-card__description">Start with foundational cloud computing concepts</div>
           </a>
-          <a href="{{ config.repo_url }}" title="GitHub repository" class="md-button md-button--secondary" target="_blank" rel="noopener">
-            GitHub repo
+          <a href="cloud-security-roadmap/" class="mdx-card mdx-card--green">
+            <div class="mdx-card__icon">🔐</div>
+            <div class="mdx-card__title">Cloud Security</div>
+            <div class="mdx-card__description">Learn security best practices across clouds</div>
           </a>
+          <a href="AWS/" class="mdx-card mdx-card--orange">
+            <div class="mdx-card__icon">🚀</div>
+            <div class="mdx-card__title">AWS Deep Dive</div>
+            <div class="mdx-card__description">Master AWS services and architectures</div>
+          </a>
+          <a href="Infrastructure-as-Code/" class="mdx-card mdx-card--purple">
+            <div class="mdx-card__icon">🔧</div>
+            <div class="mdx-card__title">Infrastructure as Code</div>
+            <div class="mdx-card__description">Deploy with Terraform and automation</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Featured Content -->
+      <div class="mdx-section">
+        <h2>Featured Content</h2>
+        <div class="mdx-grid-featured">
+          <div class="mdx-featured-card">
+            <div class="mdx-featured-card__header">Security Roadmap</div>
+            <div class="mdx-featured-card__title">Cloud Security Career Path</div>
+            <div class="mdx-featured-card__description">Complete learning roadmap to become a cloud security engineer with certifications and practical projects.</div>
+            <a href="cloud-security-roadmap/index.md" class="mdx-featured-card__link">Explore Roadmap →</a>
+          </div>
+          <div class="mdx-featured-card">
+            <div class="mdx-featured-card__header">Cloud Platforms</div>
+            <div class="mdx-featured-card__title">AWS, Azure & GCP Guides</div>
+            <div class="mdx-featured-card__description">In-depth documentation for major cloud providers with projects, best practices, and security hardening.</div>
+            <a href="AWS/" class="mdx-featured-card__link">View Platforms →</a>
+          </div>
+          <div class="mdx-featured-card">
+            <div class="mdx-featured-card__header">Programming</div>
+            <div class="mdx-featured-card__title">Bash, Python, Go & More</div>
+            <div class="mdx-featured-card__description">Master scripting languages essential for cloud automation and security engineering.</div>
+            <a href="programming/" class="mdx-featured-card__link">Start Coding →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Platforms Overview -->
+      <div class="mdx-section">
+        <h2>Supported Cloud Platforms</h2>
+        <div class="mdx-platforms">
+          <div class="mdx-platform">
+            <div class="mdx-platform__name">AWS</div>
+            <p>VPC, EC2, S3, IAM, RDS, Lambda, and more with real-world projects</p>
+            <a href="AWS/">AWS Guides</a>
+          </div>
+          <div class="mdx-platform">
+            <div class="mdx-platform__name">Azure</div>
+            <p>Virtual Machines, App Service, Databases, and security controls</p>
+            <a href="Azure/">Azure Guides</a>
+          </div>
+          <div class="mdx-platform">
+            <div class="mdx-platform__name">GCP</div>
+            <p>Compute Engine, Cloud Storage, BigQuery, and data security</p>
+            <a href="GCP/">GCP Guides</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="mdx-cta">
+        <h2>Ready to Master Cloud Security?</h2>
+        <p>Join thousands of security engineers learning cloud best practices</p>
+        <a href="cloud-security-roadmap/index.md" class="md-button md-button--primary md-button--lg">
+          Start Your Journey
+        </a>
+        <div class="mdx-cta__secondary">
+          <a href="{{ config.repo_url }}" target="_blank" rel="noopener">Contribute on GitHub</a> · 
+          <a href="blog/index.md">Read the Blog</a>
         </div>
       </div>
     </div>
