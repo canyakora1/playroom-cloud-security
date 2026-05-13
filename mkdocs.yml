@@ -44,14 +44,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
-      accent: purple
+      accent: blue
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: blue
+      accent: yellow
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -202,10 +202,22 @@ nav:
         - AWS/projects/Intermediate/index-6.md
     - AWS Security:
       - AWS/security/index.md
-  - Azure: Azure/azure.md
-  - GCP: GCP/gcp.md
+  - Azure: Azure/index.md
+  - GCP: GCP/index.md
   - DevOps: DevOps/devops.md
-  - Kubernetes: Kubernetes/k8s.md
+  - Kubernetes: 
+    - Kubernetes/index.md
+    - Kubernetes deployment:
+      - "Deployment":
+        - Kubernetes/Deployment/index.md
+        - Kubernetes/Deployment/minikube.md
+        - Kubernetes/Deployment/kubectl.md
+    - Kubernetes/k8s-basics.md
+    - Kubernetes/k8s-controlplane.md
+    - Kubernetes/k8s-workernodes.md
+    - Kubernetes/k8s-networking.md
+    - Kubernetes/k8s-security.md
+    
   - Hacking The Cloud: 
     - Hacking-the-cloud/index.md
     - Flaws: 

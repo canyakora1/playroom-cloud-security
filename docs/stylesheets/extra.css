@@ -1,14 +1,61 @@
 /* ============================================================================
    Enhanced Homepage Styles
    ============================================================================ */
+/* :root  > * {
+  --md-primary-fg-color:        #251b41;
+  --md-primary-fg-color--light: #612222;
+  --md-primary-fg-color--dark:  #023e1d;
+} */
 
+/* Page title styling with Material theme specificity */
+.md-typeset h1,
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem !important;
+  margin-top: 0.5rem !important;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #107a33 !important;
+}
+
+/* Brand colors */
+.youtube {
+    color: #EE0F0F;
+}
+
+.hackthebox {
+  color: #107a33;
+}
+
+.tryhackme {
+  color: #a80985;
+}
+
+/* Section headers */
+.md-typeset h2,
+h2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: 1.8rem !important;
+  margin-bottom: 1rem !important;
+  color: #c1e10e !important;
+}
+
+/* Subsection headers */
+.md-typeset h3,
+h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem !important;
+  color: #ce7004 !important;
+}
 /* Main grid centering */
 .md-grid {
   margin: 0 auto;
 }
 
 /* Hero Section */
-.mdx-hero {
+/* .mdx-hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,7 +66,7 @@
   border-radius: 0;
   color: var(--md-default-fg-color);
   margin-bottom: 3rem;
-}
+} */
 
 .mdx-hero__content {
   display: flex;
@@ -36,7 +83,7 @@
   text-align: left;
   white-space: nowrap;
   display: block;
-  color: #107a33;
+  color: var(--md-default-fg-color);
 }
 
 .mdx-hero__subtitle {
