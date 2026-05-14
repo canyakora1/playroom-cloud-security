@@ -51,7 +51,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: yellow
+      accent: green
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -162,7 +162,7 @@ nav:
     - cloud-security-roadmap/cloud-security-certs.md
   - Programming:
     - "Scripting":
-      - programming/getting-started-with-scripting.md
+      - programming/index.md
       - Bash:
         - programming/Bash/bash.md
         - programming/Bash/advanced-bash.md

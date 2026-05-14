@@ -18,42 +18,38 @@ Kubernetes is widely used to build reliable microservices and cloud-native syste
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webapp
-  labels:
-    app: webapp
+  name: demo-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: webapp
+      app: nginx
   template:
     metadata:
       labels:
-        app: webapp
+        app: nginx
     spec:
       containers:
-        - name: webapp
-          image: nginx:1.27
-          ports:
-            - containerPort: 80
-          resources:
-            requests:
-              cpu: "100m"
-              memory: "128Mi"
-            limits:
-              cpu: "500m"
-              memory: "256Mi"
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 5
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 15
-            periodSeconds: 20
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+```
 
+```yaml
+# Create a deployment
+kubectl apply -f deployment.yml
+deployment.apps/demo-deployment created
+
+# View deployments
+kubectl get deployments
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+demo-deployment   3/3     3            3           29s
+
+# To view all our nginx pods
+kubectl get pods
+NAME                               READY   STATUS    RESTARTS   AGE
+demo-deployment-77bc6bd484-7bxgs   1/1     Running   0          49s
+demo-deployment-77bc6bd484-jzcbh   1/1     Running   0          49s
+demo-deployment-77bc6bd484-zvfl4   1/1     Running   0          49s
 ```

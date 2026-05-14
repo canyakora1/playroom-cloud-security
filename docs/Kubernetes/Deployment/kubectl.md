@@ -160,6 +160,8 @@ kubectl get pods -A
 
 Expected nodes output (allow ~90 s for `Ready`):
 
+![vagrant-vm](../../assets/images/K8S/vagrant-vm.png)
+
 ```
 NAME           STATUS   ROLES           AGE   VERSION
 k8s-control    Ready    control-plane   6m    v1.29.x
