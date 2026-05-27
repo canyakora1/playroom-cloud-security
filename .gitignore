@@ -45,3 +45,6 @@ tmp
 .vscode
 *.sublime-project
 *.sublime-workspace
+
+# Devbox
+devbox.*
