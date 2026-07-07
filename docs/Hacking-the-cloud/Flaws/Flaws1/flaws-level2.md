@@ -2,13 +2,13 @@
 title: Level 2
 ---
 
-Status: Done
-Assign: Dcyberguy
+# Level 2
 
-![image.png](../../../assets/images/Flaws/level-2-banner.png)
+Status: Done Assign: Dcyberguy
+
+![image.png](../../../../.gitbook/assets/level-2-banner.png)
 
 If you don't have an AWS account, click here and be redirected to the AWS page to create one. [AWS Free Tier Account creation](https://signin.aws.amazon.com/signup?request_type=register)
-
 
 I already have my AWS account configured
 

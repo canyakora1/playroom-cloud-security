@@ -2,12 +2,13 @@
 title: Level 6
 ---
 
-Status: Done
-Assign: Dcyberguy
+# Level 6
 
-## Level 6
+Status: Done Assign: Dcyberguy
 
-For this final challenge, you're getting a user access key that has the SecurityAudit policy attached to it.  See what else it can do and what else you might find in this AWS account.
+### Level 6
+
+For this final challenge, you're getting a user access key that has the SecurityAudit policy attached to it. See what else it can do and what else you might find in this AWS account.
 
 ```json
 For this final challenge, you're getting a user access key that has the SecurityAudit policy attached to it.  See what else it can do and what else you might find in this AWS account.
@@ -167,7 +168,7 @@ aws iam get-policy-version --policy-arn arn:aws:iam::975426262029:policy/list_ap
 
 But nothing on the `apigateway` I will pivot to something else.
 
-### Lambda Functions
+#### Lambda Functions
 
 I found a `lambda` function in `us-west-2` that is `level6`. Which is something worth looking into
 
@@ -265,6 +266,4 @@ x-amz-cf-id: D8REAiPj36eaR3Ktv87qo1k6azH2oh5vDC-9ND7qWNU5XEDy4YHQdQ==
 
 Nice, I get a link to go the below link.
 
-[](http://theend-797237e8ada164bf9f12cebf93b282cf.flaws.cloud/d730aa2b)
-
-![image.png](../../../assets/images/Flaws/The-end-banner.png)
+![image.png](../../../../.gitbook/assets/The-end-banner.png)

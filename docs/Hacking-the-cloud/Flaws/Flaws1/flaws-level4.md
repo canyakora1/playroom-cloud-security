@@ -2,10 +2,11 @@
 title: Level 4
 ---
 
-Status: Done
-Assign: Dcyberguy
+# Level 4
 
-![image.png](../../../assets/images/Flaws/level-4-banner.png)
+Status: Done Assign: Dcyberguy
+
+![image.png](../../../../.gitbook/assets/level-4-banner.png)
 
 We can see the Web application is running on an `EC2`. There is also a `snapshot` that possibly has some credentials that was used when Nginx was configured.
 
@@ -193,7 +194,7 @@ aws ec2 describe-snapshots --region us-west-2 --owner-ids 975426262029 --profile
 
 ```
 
-Looking at the snapshot permissions, I found out it is open to the `public`. So it does matter what AWS account, this snapshot can be imported there. 
+Looking at the snapshot permissions, I found out it is open to the `public`. So it does matter what AWS account, this snapshot can be imported there.
 
 ```bash
 aws ec2 describe-snapshot-attribute \
@@ -214,11 +215,11 @@ aws ec2 describe-snapshot-attribute \
 
 The way we can do this, is by creating a `Virtual machine` in our AWS account and attaching the above AWS managed snapshot.
 
-![image.png](../../../assets/images/Flaws/EBS-Volume.png)
+![image.png](../../../../.gitbook/assets/EBS-Volume.png)
 
 Attached the EBS snapshot
 
-![image.png](../../../assets/images/Flaws/ec2-instance.png)
+![image.png](../../../../.gitbook/assets/ec2-instance.png)
 
 Login to the EC2 Instance
 
@@ -306,8 +307,8 @@ htpasswd -b /etc/nginx/.htpasswd flaws nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M
 
 Nice I found creds: Username: `flaws` and Password: `nCP8xigdjpjyiXgJ7nJu7rw5Ro68iE8M`
 
-![image.png](../../../assets/images/Flaws/Level-4-user-password.png)
+![image.png](../../../../.gitbook/assets/Level-4-user-password.png)
 
-![image.png](../../../assets/images/Flaws/level-5-banner.png)
+![image.png](../../../../.gitbook/assets/level-5-banner.png)
 
 Head to Level 5 ------->

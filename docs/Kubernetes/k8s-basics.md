@@ -2,9 +2,11 @@
 title: Kubernetes Overview
 ---
 
-![k8s](../assets/images/k8s.png)
+# Kubernetes Overview
 
-Kubernetes (often shortened to **K8s**) is an open-source platform for running and managing **containerized applications** at scale. 
+![k8s](../../.gitbook/assets/k8s.png)
+
+Kubernetes (often shortened to **K8s**) is an open-source platform for running and managing **containerized applications** at scale.
 
 It automates key operational tasks like **deploying** apps, **scaling** them up or down, **load balancing** traffic, and **recovering** from failures.
 
@@ -12,7 +14,7 @@ At a high level, you describe the desired state of your application (for example
 
 Kubernetes is widely used to build reliable microservices and cloud-native systems because it provides consistent orchestration across environments—on a laptop, in a data center, or in the cloud.
 
-## Sample Kubernetes Deployment file
+### Sample Kubernetes Deployment file
 
 ```yaml
 apiVersion: apps/v1

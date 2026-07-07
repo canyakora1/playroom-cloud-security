@@ -2,12 +2,13 @@
 title: Level 5
 ---
 
-Status: Done
-Assign: Dcyberguy
+# Level 5
 
-## Level 5
+Status: Done Assign: Dcyberguy
 
-![image.png](../../../assets/images/Flaws/level-5-instruction.png)
+### Level 5
+
+![image.png](../../../../.gitbook/assets/level-5-instruction.png)
 
 There is mention of on an `EC2 has a simple HTTP only proxy on it`. Let’s check the `EC2 instance Metadata service`
 
@@ -31,6 +32,7 @@ Last-Modified: Fri, 23 Jan 2026 20:50:20 GMT
 }
 
 ```
+
 If using `Linux`, you can use the `export` command and add the AWS creds to your `env variable`.
 
 ```bash
@@ -52,7 +54,7 @@ aws sts get-caller-identity --profile flawsv2 | jq
 
 ```
 
-They also provided a level6 link. So I can list all s3 bucket 
+They also provided a level6 link. So I can list all s3 bucket
 
 ```json
 aws s3 ls s3://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud --profile flawsv2
@@ -81,7 +83,6 @@ download: s3://level6-cc4c404a8a8b876167f5e70a7d8c9880.flaws.cloud/ddcc78ff/hint
 
 Looking at the `index.html` file, we are presented with another `AWS ACCESS KEYS`
 
-![image.png](../../../assets/images/Flaws/git-accesskey.png)
-
+![image.png](../../../../.gitbook/assets/git-accesskey.png)
 
 Head over to Level 6 --------->

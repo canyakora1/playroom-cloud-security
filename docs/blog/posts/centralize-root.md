@@ -1,7 +1,7 @@
 ---
 date:
-  created: 2026-01-04
-  updated: 2026-01-04
+  created: 2026-01-04T00:00:00.000Z
+  updated: 2026-01-04T00:00:00.000Z
 authors:
   - dcyberguy
   - playroom
@@ -9,27 +9,24 @@ authors:
 
 # Centralize Root account for Organization member Accounts
 
-![centralize-root](../../assets/images/Blogs/root-organization.png)
+![centralize-root](<../../../.gitbook/assets/root-organization (1).png>)
 
 AWS in 2025 released what Cloud security engineers call `"a more-secure solution for the root accounts"`. In a nut-shell, before now each AWS account that is part of an AWS Organization has a root account that are assigned to the account that has absolute control/access to all AWS services and resources in those account.
 
-<!-- more -->
-
 Now with this new release you can now combine all the AWS account in an AWS Organization to a central management that would be centrally controlled by a `delegate` root `supremo`. Once the consolidation is completed, a numbers of activities can be carried out such as:
 
-- :fontawesome-solid-user-group: Deleting the root user credentials from other members accounts in the AWS Organization.
-- :fontawesome-solid-user-group: Remove the root user's password, access keys.
-- :fontawesome-solid-user-group: Deactivate their multi-factor authentication (MFA).
-
-- :fontawesome-solid-user-group: New accounts that are added to the AWS Organization, wouldn't have a root user credentials by default.
+* :fontawesome-solid-user-group: Deleting the root user credentials from other members accounts in the AWS Organization.
+* :fontawesome-solid-user-group: Remove the root user's password, access keys.
+* :fontawesome-solid-user-group: Deactivate their multi-factor authentication (MFA).
+* :fontawesome-solid-user-group: New accounts that are added to the AWS Organization, wouldn't have a root user credentials by default.
 
 ## :simple-rundeck: Getting Started
 
-To get started there are some prerequisites that __MUST__ be preconfigured before proceeding:
+To get started there are some prerequisites that **MUST** be preconfigured before proceeding:
 
-- You definitely should have an AWS Account. More than one AWS Account is preferred.
-- Have an AWS Organization already configured.
-- You must have the following IAM permissions:
+* You definitely should have an AWS Account. More than one AWS Account is preferred.
+* Have an AWS Organization already configured.
+* You must have the following IAM permissions:
 
 ```bash
   iam:GetAccessKeyLastUsed
@@ -49,7 +46,7 @@ To get started there are some prerequisites that __MUST__ be preconfigured befor
   sts:AssumeRoot
 ```
 
-- You must have the following permissions to enable this feature in your organization:
+* You must have the following permissions to enable this feature in your organization:
 
 ```bash
 iam:EnableOrganizationsRootCredentialsManagement
@@ -84,7 +81,5 @@ organizations:ListTagsForResource
 ```
 
 ## :material-console: Using the Console:
-Once you are at the IAM portion on the AWS Console
-Enable `Centralized root access Management` by clicking `Enable`.
-![aws-console](../../assets/images/Blogs/root-access-management.png)
 
+Once you are at the IAM portion on the AWS Console Enable `Centralized root access Management` by clicking `Enable`. ![aws-console](../../../.gitbook/assets/root-access-management.png)

@@ -2,7 +2,9 @@
 title: Attacker - Level 1
 ---
 
-![level-1](../../../assets/images/Flaws/level1.png)
+# Attacker - Level 1
+
+![level-1](../../../../.gitbook/assets/level1.png)
 
 ```bash
 curl -v http://level1.flaws2.cloud/
@@ -30,8 +32,7 @@ curl -v http://level1.flaws2.cloud/
 < 
 ```
 
-In Burpsuite, looking at the response, you will notice the name form is making an api call to a particular web-form.
-![api-call](../../../assets/images/Flaws/api-call.png)
+In Burpsuite, looking at the response, you will notice the name form is making an api call to a particular web-form. ![api-call](../../../../.gitbook/assets/api-call.png)
 
 I'll curl that `endpoint` and look for interesting findings.
 
@@ -44,7 +45,8 @@ curl https://2rfismmoo8.execute-api.us-east-1.amazonaws.com/default/level1\?code
 * ALPN: curl offers h2,http/1.1
 << SNIP >>
 ```
-I also saw something interesting in the `Javascript` on wen url source code. It is wants to validate a code in the `input` section, this code has to be a number. 
+
+I also saw something interesting in the `Javascript` on wen url source code. It is wants to validate a code in the `input` section, this code has to be a number.
 
 ```bash
 For this level, you'll need to enter the correct PIN code.  The correct PIN is 100 digits long, so brute forcing it won't help.
@@ -59,7 +61,7 @@ For this level, you'll need to enter the correct PIN code.  The correct PIN is 1
                 }
 ```
 
-Let's try inputting something that is __NOT A NUMBER__, and I get `creds`.
+Let's try inputting something that is **NOT A NUMBER**, and I get `creds`.
 
 ```bash
 curl https://2rfismmoo8.execute-api.us-east-1.amazonaws.com/default/level1\?code\=code
@@ -102,8 +104,7 @@ nano aws-keys.txt
 }
 ```
 
-You can also see it well in Burpsuite
-![Burp](../../../assets/images/Flaws/burpsuite.png)
+You can also see it well in Burpsuite ![Burp](../../../../.gitbook/assets/burpsuite.png)
 
 Use the `export` command if you are using `Linux` to add the AWS CREDS to Env variables
 
@@ -156,4 +157,4 @@ Output
   57   │ 
 ```
 
-__Head to Level 2 -------->__
+**Head to Level 2 -------->**

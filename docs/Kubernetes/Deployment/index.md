@@ -2,10 +2,7 @@
 title: Deploying a Kubernetes base infrastructure
 ---
 
-<div class="grid cards" markdown>
+# Deploying a Kubernetes base infrastructure
 
-- ![k8s-sec](../../assets/images/K8S/mimikube.jpg) :octicons-arrow-right-24: __[Mimikube and Docker](./minikube.md)__
-- ![k8s-sec](../../assets/images/K8S/vagrant.jpg) :octicons-arrow-right-24: __[Vagrant and VirtualBox](./kubectl.md)__
-
-
-</div>
+* ![k8s-sec](../../../.gitbook/assets/mimikube.jpg) :octicons-arrow-right-24: [**Mimikube and Docker**](minikube.md)
+* ![k8s-sec](../../../.gitbook/assets/vagrant.jpg) :octicons-arrow-right-24: [**Vagrant and VirtualBox**](kubectl.md)

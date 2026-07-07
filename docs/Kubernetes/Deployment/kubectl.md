@@ -2,6 +2,8 @@
 title: Kubernetes Dev Cluster — Vagrant
 ---
 
+# Kubernetes Dev Cluster — Vagrant
+
 A local three-node Kubernetes cluster running on Ubuntu 22.04 (Jammy) VMs, provisioned with Vagrant and VirtualBox. Version 2 adds a full optional addon layer: DNS caching, a Web UI, resource monitoring, log aggregation, ingress, TLS, and a private container registry.
 
 ```
@@ -19,42 +21,41 @@ A local three-node Kubernetes cluster running on Ubuntu 22.04 (Jammy) VMs, provi
 ```
 
 For scripts used in this demo, go to the `Playroom Security GitHub` repositoty here:
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/playroom-security/Kubernetes-Dev-Cluster-Vagrant" data-iframely-url="https://iframely.net/DagsmOM5?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
 
----
+***
 
-## What's New in v2
+### What's New in v2
 
-| Category | Addon | Default |
-|---|---|---|
-| DNS | NodeLocal DNSCache | ✅ On |
-| Web UI | Kubernetes Dashboard | ✅ On |
-| Resource monitoring | Metrics Server | ✅ On |
-| Resource monitoring | Prometheus + Grafana | ⬜ Off |
-| Cluster logging | Loki + Promtail | ⬜ Off |
-| Ingress | ingress-nginx | ✅ On |
-| TLS | cert-manager + self-signed issuer | ⬜ Off |
-| Registry | In-cluster Docker Registry | ⬜ Off |
-| Network | Cilium support added | — |
+| Category            | Addon                             | Default |
+| ------------------- | --------------------------------- | ------- |
+| DNS                 | NodeLocal DNSCache                | ✅ On    |
+| Web UI              | Kubernetes Dashboard              | ✅ On    |
+| Resource monitoring | Metrics Server                    | ✅ On    |
+| Resource monitoring | Prometheus + Grafana              | ⬜ Off   |
+| Cluster logging     | Loki + Promtail                   | ⬜ Off   |
+| Ingress             | ingress-nginx                     | ✅ On    |
+| TLS                 | cert-manager + self-signed issuer | ⬜ Off   |
+| Registry            | In-cluster Docker Registry        | ⬜ Off   |
+| Network             | Cilium support added              | —       |
 
 All addons are toggled in `settings.yaml` — no script editing required.
 
----
+***
 
-## Prerequisites
+### Prerequisites
 
-| Tool | Version | Notes |
-|---|---|---|
-| [Vagrant](https://developer.hashicorp.com/vagrant/downloads) | ≥ 2.3 | |
-| [VirtualBox](https://www.virtualbox.org/wiki/Downloads) | ≥ 7.0 | |
-| vagrant-reload plugin | any | `vagrant plugin install vagrant-reload` |
-| Free RAM (default addons) | ≥ 8 GB | 3 × 2 GB + host overhead |
-| Free RAM (with Prometheus) | ≥ 12 GB | increase worker memory to 3072 MB |
-| Free Disk | ≥ 30 GB | ~10 GB per VM |
+| Tool                                                         | Version | Notes                                   |
+| ------------------------------------------------------------ | ------- | --------------------------------------- |
+| [Vagrant](https://developer.hashicorp.com/vagrant/downloads) | ≥ 2.3   |                                         |
+| [VirtualBox](https://www.virtualbox.org/wiki/Downloads)      | ≥ 7.0   |                                         |
+| vagrant-reload plugin                                        | any     | `vagrant plugin install vagrant-reload` |
+| Free RAM (default addons)                                    | ≥ 8 GB  | 3 × 2 GB + host overhead                |
+| Free RAM (with Prometheus)                                   | ≥ 12 GB | increase worker memory to 3072 MB       |
+| Free Disk                                                    | ≥ 30 GB | \~10 GB per VM                          |
 
----
+***
 
-## Project Structure
+### Project Structure
 
 ```
 k8s-dev/
@@ -69,11 +70,11 @@ k8s-dev/
 └── dashboard-token.txt  # Dashboard bearer token (if addon enabled)
 ```
 
----
+***
 
-## Configuration — `settings.yaml`
+### Configuration — `settings.yaml`
 
-### Kubernetes & nodes
+#### Kubernetes & nodes
 
 ```yaml
 kubernetes:
@@ -93,15 +94,15 @@ nodes:
       memory: 2048
 ```
 
-### CNI options
+#### CNI options
 
-| CNI | `cni` value | `pod_cidr` | Notes |
-|---|---|---|---|
-| Flannel | `flannel` | `10.244.0.0/16` | Simple, default |
-| Calico | `calico` | `192.168.0.0/16` | NetworkPolicy support |
-| Cilium | `cilium` | `10.244.0.0/16` | eBPF-based, feature-rich |
+| CNI     | `cni` value | `pod_cidr`       | Notes                    |
+| ------- | ----------- | ---------------- | ------------------------ |
+| Flannel | `flannel`   | `10.244.0.0/16`  | Simple, default          |
+| Calico  | `calico`    | `192.168.0.0/16` | NetworkPolicy support    |
+| Cilium  | `cilium`    | `10.244.0.0/16`  | eBPF-based, feature-rich |
 
-### Addons
+#### Addons
 
 Every addon has an `enabled` flag. Flip it to `true`/`false` and rebuild.
 
@@ -118,25 +119,23 @@ addons:
   registry:             { enabled: false, nodeport: 32000 }
 ```
 
-> **Loki** requires `prometheus_grafana.enabled: true` — it adds a datasource
-> to the Grafana instance deployed by that addon.
+> **Loki** requires `prometheus_grafana.enabled: true` — it adds a datasource to the Grafana instance deployed by that addon.
 
----
+***
 
-## Quick Start
+### Quick Start
 
-### 1. Install the Vagrant plugin
+#### 1. Install the Vagrant plugin
 
 ```bash
 vagrant plugin install vagrant-reload
 ```
 
-### 2. Review `settings.yaml`
+#### 2. Review `settings.yaml`
 
-Enable or disable addons to match your available RAM. The defaults (DNS cache,
-Metrics Server, Dashboard, ingress-nginx) work comfortably within 8 GB.
+Enable or disable addons to match your available RAM. The defaults (DNS cache, Metrics Server, Dashboard, ingress-nginx) work comfortably within 8 GB.
 
-### 3. Start the cluster
+#### 3. Start the cluster
 
 ```bash
 # Recommended: control-plane first so join.sh exists before workers start
@@ -149,7 +148,7 @@ vagrant up
 
 > First run takes **15–25 minutes** depending on internet speed and enabled addons.
 
-### 4. Verify
+#### 4. Verify
 
 ```bash
 export KUBECONFIG=$(pwd)/admin.conf
@@ -158,9 +157,9 @@ kubectl get nodes
 kubectl get pods -A
 ```
 
-Expected nodes output (allow ~90 s for `Ready`):
+Expected nodes output (allow \~90 s for `Ready`):
 
-![vagrant-vm](../../assets/images/K8S/vagrant-vm.png)
+![vagrant-vm](../../../.gitbook/assets/vagrant-vm.png)
 
 ```
 NAME           STATUS   ROLES           AGE   VERSION
@@ -169,11 +168,11 @@ k8s-worker-1   Ready    <none>          4m    v1.29.x
 k8s-worker-2   Ready    <none>          4m    v1.29.x
 ```
 
----
+***
 
-## Addon Reference
+### Addon Reference
 
-### NodeLocal DNSCache
+#### NodeLocal DNSCache
 
 Runs a DNS caching agent on every node at `169.254.20.10`, reducing latency and CoreDNS load.
 
@@ -182,9 +181,9 @@ Runs a DNS caching agent on every node at `169.254.20.10`, reducing latency and 
 kubectl get ds node-local-dns -n kube-system
 ```
 
----
+***
 
-### Metrics Server
+#### Metrics Server
 
 Enables `kubectl top` and the HorizontalPodAutoscaler.
 
@@ -193,9 +192,9 @@ kubectl top nodes
 kubectl top pods -A
 ```
 
----
+***
 
-### Kubernetes Dashboard
+#### Kubernetes Dashboard
 
 Browser-based cluster management UI. The bearer token is written to `dashboard-token.txt` in your project directory.
 
@@ -209,17 +208,19 @@ cat dashboard-token.txt
 
 Open `https://192.168.56.10:<nodeport>` in your browser, accept the self-signed certificate warning, and paste the token.
 
-### Dashboard Token Renewal
+#### Dashboard Token Renewal
+
 To renew the `Dashboard Token` if it ever expires:
 
 ```
 kubectl -n kubernetes-dashboard create token admin-user --duration=720h
 ```
-**__Maximum duration__** = 720h
 
----
+**Maximum duration** = 720h
 
-### ingress-nginx
+***
+
+#### ingress-nginx
 
 A single entry point for HTTP/HTTPS traffic into the cluster.
 
@@ -251,11 +252,11 @@ spec:
 EOF
 ```
 
-Add `192.168.56.10  my-app.local` to your host `/etc/hosts`, then access via `http://my-app.local:30080`.
+Add `192.168.56.10 my-app.local` to your host `/etc/hosts`, then access via `http://my-app.local:30080`.
 
----
+***
 
-### cert-manager
+#### cert-manager
 
 Automates TLS certificate issuance. A `selfsigned-issuer` ClusterIssuer is created automatically.
 
@@ -279,17 +280,17 @@ EOF
 kubectl get certificate my-cert
 ```
 
----
+***
 
-### Prometheus + Grafana
+#### Prometheus + Grafana
 
 Full metrics stack deployed via `kube-prometheus-stack`. Pre-built dashboards for nodes, pods, and workloads are included out of the box.
 
-| Service | URL | Credentials |
-|---|---|---|
-| Grafana | `http://192.168.56.10:30300` | admin / `<grafana_password>` |
-| Prometheus | `http://192.168.56.10:30090` | — |
-| Alertmanager | `http://192.168.56.10:30093` | — |
+| Service      | URL                          | Credentials                  |
+| ------------ | ---------------------------- | ---------------------------- |
+| Grafana      | `http://192.168.56.10:30300` | admin / `<grafana_password>` |
+| Prometheus   | `http://192.168.56.10:30090` | —                            |
+| Alertmanager | `http://192.168.56.10:30093` | —                            |
 
 > Requires workers to have at least **3072 MB** RAM. Update `settings.yaml` before enabling.
 
@@ -298,9 +299,9 @@ Full metrics stack deployed via `kube-prometheus-stack`. Pre-built dashboards fo
 kubectl get pods -n monitoring
 ```
 
----
+***
 
-### Loki + Promtail
+#### Loki + Promtail
 
 Lightweight log aggregation. Promtail ships logs from all pods to Loki; query them in Grafana under **Explore → Loki**.
 
@@ -314,9 +315,9 @@ kubectl get ds promtail -n monitoring
 
 > Requires `prometheus_grafana.enabled: true`.
 
----
+***
 
-### Container Registry
+#### Container Registry
 
 An in-cluster Docker Registry exposed as a NodePort. Useful for pushing locally built images without Docker Hub.
 
@@ -331,11 +332,11 @@ docker push 192.168.56.10:32000/myapp:latest
 
 > containerd on every node is pre-configured to allow insecure access to this registry.
 
----
+***
 
-## Daily Usage
+### Daily Usage
 
-### SSH into a node
+#### SSH into a node
 
 ```bash
 vagrant ssh k8s-control
@@ -343,51 +344,51 @@ vagrant ssh k8s-worker-1
 vagrant ssh k8s-worker-2
 ```
 
-### kubectl from your host
+#### kubectl from your host
 
 ```bash
 export KUBECONFIG=$(pwd)/admin.conf
 # Or add to ~/.bashrc / ~/.zshrc to make it permanent
 ```
 
-### Stop and restart (preserves state)
+#### Stop and restart (preserves state)
 
 ```bash
 vagrant halt
 vagrant up
 ```
 
-### Reprovision a single node
+#### Reprovision a single node
 
 ```bash
 vagrant provision k8s-control
 ```
 
-### Destroy and rebuild from scratch
+#### Destroy and rebuild from scratch
 
 ```bash
 vagrant destroy -f
 vagrant up
 ```
 
----
+***
 
-## Resource Guide
+### Resource Guide
 
 Use this table to plan your `settings.yaml` memory values.
 
-| Addons enabled | Recommended worker RAM |
-|---|---|
-| Defaults only (DNS, Metrics, Dashboard, ingress-nginx) | 2048 MB |
-| + cert-manager or Registry | 2048 MB |
-| + Prometheus + Grafana | 3072 MB |
-| + Prometheus + Grafana + Loki | 4096 MB |
+| Addons enabled                                         | Recommended worker RAM |
+| ------------------------------------------------------ | ---------------------- |
+| Defaults only (DNS, Metrics, Dashboard, ingress-nginx) | 2048 MB                |
+| + cert-manager or Registry                             | 2048 MB                |
+| + Prometheus + Grafana                                 | 3072 MB                |
+| + Prometheus + Grafana + Loki                          | 4096 MB                |
 
----
+***
 
-## Troubleshooting
+### Troubleshooting
 
-### Nodes stuck in `NotReady`
+#### Nodes stuck in `NotReady`
 
 CNI or CoreDNS may still be initialising. Wait 90 seconds and recheck:
 
@@ -396,14 +397,14 @@ kubectl get nodes
 kubectl get pods -n kube-system
 ```
 
-### Addon pod in `CrashLoopBackOff`
+#### Addon pod in `CrashLoopBackOff`
 
 ```bash
 kubectl describe pod <pod-name> -n <namespace>
 kubectl logs <pod-name> -n <namespace> --previous
 ```
 
-### `join.sh` not found on worker
+#### `join.sh` not found on worker
 
 Provision the control-plane first:
 
@@ -412,7 +413,7 @@ vagrant provision k8s-control
 vagrant provision k8s-worker-1 k8s-worker-2
 ```
 
-### Dashboard shows no metrics
+#### Dashboard shows no metrics
 
 Ensure Metrics Server is enabled and running:
 
@@ -421,7 +422,7 @@ kubectl get pods -n kube-system | grep metrics-server
 kubectl top nodes
 ```
 
-### VirtualBox host-only network conflict
+#### VirtualBox host-only network conflict
 
 Change node IPs in `settings.yaml` to an unused subnet (e.g. `192.168.100.x`) and rebuild:
 
@@ -429,11 +430,11 @@ Change node IPs in `settings.yaml` to an unused subnet (e.g. `192.168.100.x`) an
 vagrant destroy -f && vagrant up
 ```
 
----
+***
 
-## Extending the Cluster
+### Extending the Cluster
 
-### Add a worker node
+#### Add a worker node
 
 Add an entry to `nodes.workers` in `settings.yaml`:
 
@@ -450,7 +451,7 @@ Then:
 vagrant up k8s-worker-3
 ```
 
-### Upgrade Kubernetes
+#### Upgrade Kubernetes
 
 Update `kubernetes.version` in `settings.yaml`, destroy, and rebuild:
 
@@ -459,5 +460,4 @@ vagrant destroy -f
 vagrant up
 ```
 
----
-
+***

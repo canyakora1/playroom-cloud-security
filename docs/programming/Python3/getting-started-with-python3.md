@@ -1,10 +1,10 @@
+# getting-started-with-python3
 
+![python-logo](../../../.gitbook/assets/Python-Logo-PNG-Image.png)
 
-![python-logo](../../assets/images/Python-Logo-PNG-Image.png)
+### :fontawesome-solid-code: Python Fundamentals
 
-## :fontawesome-solid-code: Python Fundamentals
-
-Python is a high-level, interpreted programming language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and many other applications.    
+Python is a high-level, interpreted programming language that is widely used for web development, scientific computing, data analysis, artificial intelligence, and many other applications.
 
 Python is known for its simplicity and readability, making it a popular choice for beginners and experienced programmers alike. It has a large and active community, which means there are plenty of resources available for learning and troubleshooting.
 
@@ -12,14 +12,15 @@ Python is a versatile language that can be used for a wide range of tasks, from 
 
 In this section, we will cover the basics of Python programming, including variables, data types, control structures, functions, and modules. We will also explore some advanced topics, such as object-oriented programming and error handling.
 
-## :fontawesome-solid-code: Sample Python Code
+### :fontawesome-solid-code: Sample Python Code
 
 ```python
 # This is a simple Python program that prints "Hello, World!"
 print("Hello, World!")
 ```
 
-### :material-variable-box: Variables and Data Types
+#### :material-variable-box: Variables and Data Types
+
 Variables are used to store values that can be used later in the program. In Python, variables are defined using the following syntax:
 
 ```python
@@ -38,19 +39,20 @@ You can then use the variable in your program by referencing it with its name:
 print("Hello, " + name + "!")
 ```
 
-### :construction: Control Structures
+#### :construction: Control Structures
+
 Control structures are used to control the flow of execution in a program. They allow you to make decisions and repeat blocks of code based on certain conditions.
 
 The most common control structures in Python are:
 
-- `if` statements: Used to execute a block of code if a certain condition is true.
-- `for` loops: Used to iterate over a list of values and execute a block of code for each value.
-- `while` loops: Used to repeatedly execute a block of code as long as a certain condition is true.
-- `break` and `continue` statements: Used to control the flow of execution within loops.
+* `if` statements: Used to execute a block of code if a certain condition is true.
+* `for` loops: Used to iterate over a list of values and execute a block of code for each value.
+* `while` loops: Used to repeatedly execute a block of code as long as a certain condition is true.
+* `break` and `continue` statements: Used to control the flow of execution within loops.
 
 Here is an example of an `if` statement:
 
-```py title="conditional.py"
+```py
 if age >= 18:
     print("You are an adult")
 else:
@@ -59,7 +61,8 @@ else:
 
 This script checks if the `age` variable is greater than or equal to 18. If it is, it prints "You are an adult". Otherwise, it prints "You are a minor".
 
-### :material-function: Functions
+#### :material-function: Functions
+
 Functions are reusable blocks of code that can be called from within a program. They allow you to organize your code into smaller, more manageable pieces.
 
 To define a function, you use the following syntax:
@@ -71,7 +74,7 @@ def function_name(parameters):
 
 For example, here is a function that prints a message:
 
-```python title="hello.py"
+```python
 def say_hello():
     print("Hello, World!")
 ```
@@ -101,7 +104,8 @@ say_hello("John")
 
 This will print "Hello, John!".
 
-### Modules
+#### Modules
+
 Modules are collections of functions and variables that can be used in a program. They allow you to organize your code into reusable components and make it easier to manage and maintain.
 
 To use a module in your program, you need to import it using the `import` statement. For example, to import the `math` module, you would use the following syntax:
@@ -118,7 +122,8 @@ math.sqrt(16)
 
 This will calculate the square root of 16 and return 4.
 
-### :x: Error Handling
+#### :x: Error Handling
+
 Error handling is an important aspect of programming, as it allows you to handle unexpected situations and prevent your program from crashing. In Python, you can use the `try` and `except` statements to handle errors.
 
 The `try` statement is used to enclose the code that might raise an error. If an error occurs within the `try` block, the code execution is immediately transferred to the `except` block.
@@ -147,22 +152,6 @@ except:
 
 This script attempts to divide 10 by 0, which will raise a `ZeroDivisionError`. The code execution is transferred to the `except` block, which prints "An error occurred".
 
+### Learn Python
 
-
-
-## Learn Python
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://mimo.org" data-iframely-url="https://iframely.net/TRtlOOoe?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
-
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.udemy.com/course/100-days-of-code/" data-iframely-url="https://iframely.net/ovRCOWa1?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
-
-
-<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.netacad.com/courses/python-essentials-1" data-iframely-url="https://iframely.net/f6BKDdoA?card=small&theme=dark"></a></div></div><script async src="https://iframely.net/embed.js"></script>
-
-
-
-
-## Recommended YouTube Videos:
-
-<iframe width="764" height="443" src="https://www.youtube.com/embed/BO6LjtEOGZw" title="Learn Python With 5 Projects - From Beginner to Advanced" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+### Recommended YouTube Videos:

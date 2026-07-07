@@ -2,10 +2,11 @@
 title: Level 3
 ---
 
-Status: Done
-Assign: Dcyberguy
+# Level 3
 
-![image.png](../../../assets/images/Flaws/level-3-banner.png)
+Status: Done Assign: Dcyberguy
+
+![image.png](../../../../.gitbook/assets/level-3-banner.png)
 
 ```bash
 curlie http://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud -v
@@ -27,7 +28,8 @@ Content-Length: 1861
 Server: AmazonS3
 << SNIP FOR BREVITY >>
 ```
-## Enumeration:
+
+### Enumeration:
 
 Looking at the Amazon s3 bucket for `LEVEL 3`. I see at folder called `.git`. That is interesting, maybe we might find somehting juicey in there.
 
@@ -157,7 +159,7 @@ Default output format [None]: json
 
 ```
 
-Check what user is this. Like the linux `whoami`. We are now the `backup` user. 
+Check what user is this. Like the linux `whoami`. We are now the `backup` user.
 
 ```bash
 aws sts get-caller-identity --profile flaws

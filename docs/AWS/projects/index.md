@@ -1,20 +1,13 @@
+# Coming soon !!
 
-## Coming soon !! :warning: :warning:
-
-<div class="grid cards" markdown>
-
-- ![AWS Project](../../assets/images/AWS/aws-3-tier.png) :octicons-arrow-right-24: __[AWS Project: Three Tier Architecture](basic/three-tier-architecture.md)__
-- ![AWS Project](../../assets/images/AWS/s3-static.png) :octicons-arrow-right-24: __[AWS Project: Amazon S3 Static Website](basic/static-website-hosting.md)__
-- ![AWS Project](../../assets/images/AWS/vpc-peering.png) :octicons-arrow-right-24: __[AWS Project: VPC Peering](../projects/Intermediate/vpc-peering.md)__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Secure Multi-Tenant SaaS Platform (Zero-Trust)]()__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Event-Driven Order Processing System (Enterprise-Grade)]()__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Highly Available Web Application (Multi-AZ + DR)]()__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Cloud-Native CI/CD Platform (DevSecOps)]()__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Real-Time Log Analytics & Security Monitoring Platform]()__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Serverless Data Lake & Analytics Platform]()__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Cost Optimization & Usage Intelligence Dashboard]()__
-- [AWS Project]() :octicons-arrow-right-24: __[AWS Project: Secure Hybrid Cloud Connectivity (Advanced Networking)]()__
-
-
-</div>
-
+* ![AWS Project](../../../.gitbook/assets/aws-3-tier.png) :octicons-arrow-right-24: [**AWS Project: Three Tier Architecture**](basic/three-tier-architecture.md)
+* ![AWS Project](../../../.gitbook/assets/s3-static.png) :octicons-arrow-right-24: [**AWS Project: Amazon S3 Static Website**](basic/static-website-hosting.md)
+* ![AWS Project](../../../.gitbook/assets/vpc-peering.png) :octicons-arrow-right-24: [**AWS Project: VPC Peering**](Intermediate/vpc-peering.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Secure Multi-Tenant SaaS Platform (Zero-Trust)**](index.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Event-Driven Order Processing System (Enterprise-Grade)**](index.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Highly Available Web Application (Multi-AZ + DR)**](index.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Cloud-Native CI/CD Platform (DevSecOps)**](index.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Real-Time Log Analytics & Security Monitoring Platform**](index.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Serverless Data Lake & Analytics Platform**](index.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Cost Optimization & Usage Intelligence Dashboard**](index.md)
+* [AWS Project](index.md) :octicons-arrow-right-24: [**AWS Project: Secure Hybrid Cloud Connectivity (Advanced Networking)**](index.md)
