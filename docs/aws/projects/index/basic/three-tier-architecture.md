@@ -4,7 +4,7 @@ title: AWS - Deploy a three tier AWS Architecture
 
 # AWS - Deploy a three tier AWS Architecture
 
-![aws-3-tier](../../../../.gitbook/assets/aws-3-tier.png)
+![aws-3-tier](../../../../../.gitbook/assets/aws-3-tier.png)
 
 Check our our Github page for more helpful tips and tricks plus and detailed walkthrough from start to finish
 

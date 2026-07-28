@@ -38,7 +38,7 @@ Explain:
 
 #### VPC Peering
 
-![vpc-peering](../../../../.gitbook/assets/vpc-peering.png)
+![vpc-peering](../../../../../.gitbook/assets/vpc-peering.png)
 
 Check out the Official AWS Documentation for more indepth information on `VPC Peering`
 
@@ -70,7 +70,7 @@ Repeat same process as above for the second VPC, but be sure to change the `IPv4
 
 View the already created `VPC` in your `VPC Dashboard`.
 
-![vpc-console](../../../../.gitbook/assets/vpc-console.png)
+![vpc-console](../../../../../.gitbook/assets/vpc-console.png)
 
 #### Creating a VPC via AWS CLI
 
@@ -166,7 +166,7 @@ playroom-devops vpc --> playroom corporate vpc
 
 #### Troubleshoot
 
-![vpc-peering-error](../../../../.gitbook/assets/error-vpc-peering.png) If you get this error: `Error accepting VPC peering connection request`. It is because there is an already establised vpc peering between the two (2) VPCs.
+![vpc-peering-error](../../../../../.gitbook/assets/error-vpc-peering.png) If you get this error: `Error accepting VPC peering connection request`. It is because there is an already establised vpc peering between the two (2) VPCs.
 
 #### Using the AWS CLI to create a VPC peering
 
@@ -234,7 +234,7 @@ The next step is to create a route table entry that will set the `Destination` a
 
 **You should something like this at the end of this demo.**
 
-![route-table](../../../../.gitbook/assets/route-table.png)
+![route-table](../../../../../.gitbook/assets/route-table.png)
 
 ### ✅ **Advantages of AWS VPC Peering**
 

@@ -4,7 +4,7 @@ title: AWS - Using s3 to deploy a Static website
 
 # AWS - Using s3 to deploy a Static website
 
-![aws-static-web](../../../../.gitbook/assets/static-aws.png)
+![aws-static-web](../../../../../.gitbook/assets/static-aws.png)
 
 Check our our Github page for html code and detailed walkthrough from start to finish
 
