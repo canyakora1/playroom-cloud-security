@@ -1,6 +1,6 @@
 # Table of contents
 
-* [docs](README.md)
+* [Securing the Cloud](README.md)
   * [Welcome](docs/index-old.md)
   * [Playroom Security](docs/index.md)
   * [AWS](docs/aws/README.md)
