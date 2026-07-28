@@ -1,11 +1,17 @@
 # Securing the Cloud
 
-## Welcome to Gitbook
+For full Cloud Security Paths and Scripts visit [**Playroom-github**](https://github.com/canyakora1).
 
-Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+## **Acknowledgments:**
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+This site wouldn't have been comprehensive without the support from these amazing platform(s)
 
-### Jump right in
+* [AWS Cloud Security](https://aws.amazon.com/security/)
+* [Microsoft Learn](https://learn.microsoft.com/en-us/training/)
+* [Cybr](https://cybr.com/)
+* [PwnedLabs.io](https://pwnedlabs.io/)
+* [HackTheBox](https://academy.hackthebox.com/)
+* [TryHackMe](https://tryhackme.com/)
+* [Learn Cantrill](https://learn.cantrill.io/)
+* [Tyler Ramsbey](https://www.youtube.com/channel/UC_82czjFMgsYMjodhG_4mIw)
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image"></th></tr></thead><tbody><tr><td><h4>Quickstart</h4></td><td>Create your first site</td><td><a href="https://gitbookio.github.io/space-quickstart-images/public-docs-card.svg">https://gitbookio.github.io/space-quickstart-images/public-docs-card.svg</a></td></tr><tr><td><h4>Editor basics</h4></td><td>Learn the basics of GitBook</td><td><a href="https://gitbookio.github.io/space-quickstart-images/basics-card.svg">https://gitbookio.github.io/space-quickstart-images/basics-card.svg</a></td></tr><tr><td><h4>Publish your docs</h4></td><td>Share your docs online</td><td><a href="https://gitbookio.github.io/space-quickstart-images/git-sync-card.svg">https://gitbookio.github.io/space-quickstart-images/git-sync-card.svg</a></td></tr></tbody></table>

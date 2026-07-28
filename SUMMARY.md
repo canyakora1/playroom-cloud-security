@@ -1,16 +1,13 @@
 # Table of contents
 
 * [Securing the Cloud](README.md)
-  * [Welcome](docs/index-old.md)
-  * [Playroom Security](docs/index.md)
   * [AWS](docs/aws/README.md)
-    * [AWS CLI](docs/AWS/aws-cli.md)
+    * [Mastering the AWS CLI](docs/AWS/aws-cli.md)
     * [aws-free-tier](docs/AWS/aws-free-tier.md)
     * [AWS Organization](docs/AWS/aws-organization.md)
-    * [Amazon Web Services (AWS)](docs/AWS/index.md)
     * [root-user](docs/AWS/root-user.md)
     * [projects](docs/aws/projects/README.md)
-      * [Coming soon !!](docs/AWS/projects/index.md)
+      * [AWS Projects](docs/AWS/projects/index.md)
       * [Intermediate](docs/aws/projects/intermediate/README.md)
         * [Secure Multi-Tenant SAAS platform (Zero Trust Architecture)](docs/AWS/projects/Intermediate/index-2.md)
         * [Event-driven Order processing system (Enterprise Grade)](docs/AWS/projects/Intermediate/index-3.md)

@@ -22,14 +22,14 @@ With AWS Organization, you can centrally manage and govern your environment as y
 
 #### :ladder: Use Cases
 
-:material-briefcase-plus-outline: **Multi-Account Strategy**: Isolate workloads, environments, or teams by creating separate AWS accounts.
+**Multi-Account Strategy**: Isolate workloads, environments, or teams by creating separate AWS accounts.
 
-:material-briefcase-plus-outline: **Policy Enforcement**: Ensure compliance by applying SCPs across your organization.
+**Policy Enforcement**: Ensure compliance by applying SCPs across your organization.
 
-:material-briefcase-plus-outline: **Cost Management**: Track and manage costs across multiple accounts with consolidated billing.
+**Cost Management**: Track and manage costs across multiple accounts with consolidated billing.
 
-:material-briefcase-plus-outline: **Scalability**: Easily add new accounts as your organization grows.
+**Scalability**: Easily add new accounts as your organization grows.
 
-:material-briefcase-plus-outline: **Sharing Resources**: Share resources like AWS Transit Gateway or AWS License Manager across accounts.
+**Sharing Resources**: Share resources like AWS Transit Gateway or AWS License Manager across accounts.
 
-:material-briefcase-plus-outline: **Security and Compliance**: Implement security best practices by isolating sensitive workloads in separate accounts.
+**Security and Compliance**: Implement security best practices by isolating sensitive workloads in separate accounts.
