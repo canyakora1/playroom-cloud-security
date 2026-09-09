@@ -6,168 +6,161 @@ title: Minikube and Docker
 
 Using containerized deployments with tools like `Docker` and `Minikube` gives you a modern way to build, test, ship, and scale applications consistently across environments.
 
-### Benefits of Docker Containerization
+## Benefits of Docker Containerization
 
 ??? Note "Environment Consistency"
 
-```
-A Docker container packages:
+    A Docker container packages:
 
-    - Application code
-    - Runtime
-    - Libraries
-    - Dependencies
-    - Configuration
-```
+        - Application code
+        - Runtime
+        - Libraries
+        - Dependencies
+        - Configuration
+
 
 ??? Note "Faster Deployment"
 
-```
-Containers start in seconds because they:
 
-Share the host OS kernel
-Are lightweight compared to virtual machines
+    Containers start in seconds because they:
 
-    Benefits:
+    Share the host OS kernel
+    Are lightweight compared to virtual machines
 
-    Faster CI/CD pipelines
-    Quicker scaling
-    Faster rollback and recovery
-```
+        Benefits:
+
+        Faster CI/CD pipelines
+        Quicker scaling
+        Faster rollback and recovery
+
 
 ??? Note "Better Resource Utilization"
 
-```
-Compared to traditional VMs:
+    Compared to traditional VMs:
 
-Virtual Machines Containers
-Heavy	Lightweight
-Full OS per VM	Shared kernel
-Slower startup	Fast startup
-Higher memory usage	Lower memory usage
+    Virtual Machines Containers
+    Heavy	Lightweight
+    Full OS per VM	Shared kernel
+    Slower startup	Fast startup
+    Higher memory usage	Lower memory usage
 
-This allows:
+    This allows:
 
-More workloads per server
-Lower cloud costs
-Higher efficiency
-```
+    More workloads per server
+    Lower cloud costs
+    Higher efficiency
+
 
 ??? Note "Portability"
 
-```
-Docker containers can run almost anywhere:
+    Docker containers can run almost anywhere:
 
-Local laptop
-On-prem servers
-AWS
-Azure
-Google Cloud
-Kubernetes clusters
+    Local laptop
+    On-prem servers
+    AWS
+    Azure
+    Google Cloud
+    Kubernetes clusters
 
-Build once → run anywhere.
-```
+    Build once → run anywhere.
+
 
 ??? Note "Simplified Dependency Management"
 
-````
-Instead of manually installing:
+    Instead of manually installing:
 
-Java
-Node.js
-Python packages
-System libraries
+    Java
+    Node.js
+    Python packages
+    System libraries
 
-Everything is defined in a Dockerfile.
+    Everything is defined in a Dockerfile.
 
-Example:
+    Example:
 
-```
-FROM python:3.12
-COPY . .
-RUN pip install -r requirements.txt
-CMD ["python", "app.py"]
-```
+    ```
+    FROM python:3.12
+    COPY . .
+    RUN pip install -r requirements.txt
+    CMD ["python", "app.py"]
+    ```
 
-This improves:
+    This improves:
 
-Reproducibility
-Automation
-Team collaboration
-````
+    Reproducibility
+    Automation
+    Team collaboration
 
-### Benefits of Minikube Deployment
+
+## Benefits of Minikube Deployment
 
 Kubernetes is powerful but complex. Minikube helps developers run Kubernetes locally.
 
 ??? Note "Learn Kubernetes Safely"
 
-```
-Minikube creates a local Kubernetes cluster on your laptop.
+    Minikube creates a local Kubernetes cluster on your laptop.
 
-You can safely practice:
+    You can safely practice:
 
-Pods
-Deployments
-Services
-Ingress
-Persistent volumes
-Helm charts
+    Pods
+    Deployments
+    Services
+    Ingress
+    Persistent volumes
+    Helm charts
 
-Without paying for cloud infrastructure.
-```
+    Without paying for cloud infrastructure.
+
 
 ??? note "Local Kubernetes Testing"
 
-```
-Before deploying to production clusters:
+    Before deploying to production clusters:
 
-Test manifests locally
-Debug networking
-Validate scaling
-Simulate deployments
+    Test manifests locally
+    Debug networking
+    Validate scaling
+    Simulate deployments
 
-This reduces production failures.
-```
+    This reduces production failures.
+
 
 ??? note "Production-Like Environment"
 
-```
-Minikube mimics real Kubernetes behavior:
 
-Scheduler
-API server
-etcd
-kubelet
+    Minikube mimics real Kubernetes behavior:
 
-So your local environment becomes very close to:
+    Scheduler
+    API server
+    etcd
+    kubelet
 
-Amazon Web Services EKS
-Microsoft AKS
-Google GKE
+    So your local environment becomes very close to:
 
-This improves deployment confidence.
-```
+    Amazon Web Services EKS
+    Microsoft AKS
+    Google GKE
+
+    This improves deployment confidence.
+
 
 ??? note "Great for CI/CD Practice"
 
-```
-You can simulate:
+    You can simulate:
 
-Docker builds
-Kubernetes deployments
-GitOps workflows
-Helm releases
-Canary deployments
+    Docker builds
+    Kubernetes deployments
+    GitOps workflows
+    Helm releases
+    Canary deployments
 
-Excellent for:
+    Excellent for:
 
-DevOps learning
-Cloud engineering portfolios
-Security testing labs
-```
+    DevOps learning
+    Cloud engineering portfolios
+    Security testing labs
 
-#### Prerequisites
+
+### Prerequisites
 
 Before installing **Minikube**. It is important you make sure your system meets the below requirements:
 
@@ -179,7 +172,7 @@ Before installing **Minikube**. It is important you make sure your system meets 
 | Disk Space               | 20GB of free disk space                          |
 | Internet Connection      | Required for downloading Minikube and Kubernetes |
 
-#### Installation
+### Installation
 
 You can use the Minikube guide here:
 
@@ -195,50 +188,50 @@ sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 
 ```
 
-#### Kubectl Installation
+### Kubectl Installation
 
 `Kubectl` is a kubernetes command-line tool that allows you to run commands against a Kubernetes clusters and many other functionalities which we will be going over in the page.
 
 Use the below Kubernetes install documentation to install kubectl.
 
-#### Docker Desktop Installation
+### Docker Desktop Installation
 
 You can use the Docker Official guide as a baseline for install Docker Desktop
 
-??? note "Docker Desktop installation"
+!!! tip "Docker Desktop installation"
 
-````
-#### Installation Steps for Docker
+    
+    #### Installation Steps for Docker
 
-Download Docker Desktop
-    1. Visit the official Docker website.
-    2. Click on the appropriate download link for your operating system (Windows, macOS, or Linux).
+    Download Docker Desktop
+        1. Visit the official Docker website.
+        2. Click on the appropriate download link for your operating system (Windows, macOS, or Linux).
 
-Install Docker Desktop
+    Install Docker Desktop
 
-    For Windows:
-        1. Run the downloaded installer.
-        2. Follow the on-screen instructions, ensuring to enable the option for WSL 2 (Windows Subsystem for Linux) if prompted.
+        For Windows:
+            1. Run the downloaded installer.
+            2. Follow the on-screen instructions, ensuring to enable the option for WSL 2 (Windows Subsystem for Linux) if prompted.
 
-    For macOS:
-        1. Open the downloaded .dmg file.
-        2. Drag the Docker icon to the Applications folder.
-        3.Launch Docker from the Applications folder and grant necessary permissions.
+        For macOS:
+            1. Open the downloaded .dmg file.
+            2. Drag the Docker icon to the Applications folder.
+            3.Launch Docker from the Applications folder and grant necessary permissions.
 
-    For Linux:
-        1. Update your package database.
-        2. Install prerequisites for HTTPS support.
-        3. Add Docker’s GPG key and set up the stable repository.
-        4. Install Docker using your package manager.
+        For Linux:
+            1. Update your package database.
+            2. Install prerequisites for HTTPS support.
+            3. Add Docker’s GPG key and set up the stable repository.
+            4. Install Docker using your package manager.
 
-Verify Installation
+    Verify Installation
 
-After installation, confirm that Docker is working correctly by running the following command in your terminal or command prompt:
+    After installation, confirm that Docker is working correctly by running the following command in your terminal or command prompt:
 
-```bash
-docker run hello-world
-```
-````
+    ```bash
+    docker run hello-world
+    ```
+    
 
 ### Deploying a Kubernetes Cluster using Minikube
 
@@ -294,7 +287,7 @@ minikube start -n=3 -d=docker
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 ```
 
-On your Docker Desktop, you should be able to your deployed Kubernetes cluster under the `Containers` tab. ![docker-k8s](../../../.gitbook/assets/docker-k8scluster.png)
+On your Docker Desktop, you should be able to your deployed Kubernetes cluster under the `Containers` tab. ![docker-k8s](../../assets/images/K8S/docker-k8scluster.png)
 
 From your terminal, you can now use `kubectl` in your cluster to get the list of nodes
 
@@ -339,19 +332,15 @@ minikube-m03   Ready    <none>          14m   v1.35.1   192.168.49.4   <none>   
 
 ??? Tip "Deploying a specific k8s version"
 
-````
-```bash
-minikube start --kubernetes-version=v1.27.0
-```
-````
+    ```bash
+    minikube start --kubernetes-version=v1.27.0
+    ```
 
 ??? Tip "Allocatee more CPU and memory"
 
-````
-```bash
-minikube start --cpus=4 --memory=8192
-```
-````
+    ```bash
+    minikube start --cpus=4 --memory=8192
+    ```
 
 #### Minikube Dashboard
 
@@ -377,7 +366,7 @@ minikube dashboard
 
 ```
 
-![minikube-dashboard](../../../.gitbook/assets/minikube-dashboard.png)
+![minikube-dashboard](../../assets/images/K8S/minikube-dashboard.png)
 
 ### When Minikube Is NOT Ideal
 

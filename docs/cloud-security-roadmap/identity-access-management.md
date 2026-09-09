@@ -18,7 +18,9 @@ title: Identity and Access Management (IAM)
 ## Recommended Videos on YT
 
 ### Azure
+<iframe width="560" height="315" src="https://www.youtube.com/embed/megA6BPpYqo?si=6znKNFiN6oyIVYYt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### AWS
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z-tbVVojMp0?si=hVtgt2Qp-lK3w8ZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Practice

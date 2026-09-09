@@ -16,7 +16,7 @@ Here's a more detailed breakdown of common responsibilities:
 | **Identity & Access Management** | Security of the CSP's authentication and authorization systems.                              | Managing user identities and access rights to cloud resources, implementing multi-factor authentication (MFA), and adhering to the principle of least privilege.                                        |
 | **Compliance**                   | Compliance with industry regulations and standards for the cloud infrastructure.             | Achieving and maintaining compliance for the workloads and data the customer puts in the cloud, often requiring understanding the CSP's compliance certifications and implementing additional controls. |
 
-![alt text](../../.gitbook/assets/no-cloud.png)
+![alt text](../assets/images/no-cloud.png)
 
 ## Further readings:
 

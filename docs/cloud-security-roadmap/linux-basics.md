@@ -19,8 +19,10 @@ Here's why Linux proficiency is indispensable in the world of cloud security:
 ??? info "**Scripting and Automation:**" Linux environments are highly conducive to scripting languages like Bash and Python, which are essential for automating security tasks, managing configurations at scale, and responding efficiently to security events in the cloud.
 
 ### Recommended YouTube videos
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v392lEyM29A?si=PM__SYUSs6lJ89hy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-&#x20;
+
+
 
 ### Practice
 

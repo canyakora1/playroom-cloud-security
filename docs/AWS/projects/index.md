@@ -1,8 +1,10 @@
-## Azure
+---
+title: AWS Projects
+---
 
 <div class="grid cards" markdown>
 
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+-   :fontawesome-brands-aws:{ .lg .middle } __Static Website hosting__
 
     ---
 
@@ -11,7 +13,7 @@
 
     [:octicons-arrow-right-24: Getting started](#)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+-   :fontawesome-brands-aws:{ .lg .middle } __Three Tier Architecture__
 
     ---
 
@@ -19,7 +21,7 @@
 
     [:octicons-arrow-right-24: Reference](#)
 
--   :material-format-font:{ .lg .middle } __Made to measure__
+-   :fontawesome-brands-aws:{ .lg .middle } __VPC Peering__
 
     ---
 
@@ -27,7 +29,7 @@
 
     [:octicons-arrow-right-24: Customization](#)
 
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   :fontawesome-brands-aws:{ .lg .middle } __Open Source, MIT__
 
     ---
 

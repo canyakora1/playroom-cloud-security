@@ -193,12 +193,12 @@ nav:
         - AWS/projects/basic/three-tier-architecture.md
         - AWS/projects/basic/static-website-hosting.md
       - Intermediate:
-        - AWS/projects/Intermediate/vpc-peering.md
-        - AWS/projects/Intermediate/index-2.md
-        - AWS/projects/Intermediate/index-3.md
-        - AWS/projects/Intermediate/index-4.md
-        - AWS/projects/Intermediate/index-5.md
-        - AWS/projects/Intermediate/index-6.md
+        - AWS/projects/intermediate/vpc-peering.md
+        - AWS/projects/intermediate/index-2.md
+        - AWS/projects/intermediate/index-3.md
+        - AWS/projects/intermediate/index-4.md
+        - AWS/projects/intermediate/index-5.md
+        - AWS/projects/intermediate/index-6.md
     - AWS Security:
       - AWS/security/index.md
   - Azure: Azure/index.md
@@ -236,6 +236,21 @@ nav:
       - Ultimate Cloud Security Championship:
         - Hacking-the-cloud/Wiz-CTF/Ultimate-Cloud-Security-Champ/perimeter-leaks.md
         - Hacking-the-cloud/Wiz-CTF/Ultimate-Cloud-Security-Champ/contain-me.md
+    - Pathfinding.cloud:
+      - Hacking-the-cloud/Pathfinding.cloud/index.md
+      - Self Escalation:
+        - Hacking-the-cloud/Pathfinding.cloud/self-escalation/index.md
+        - Hacking-the-cloud/Pathfinding.cloud/self-escalation/iam-001-to-admin.md
+        - Hacking-the-cloud/Pathfinding.cloud/self-escalation/iam-002-to-admin.md
+        - Hacking-the-cloud/Pathfinding.cloud/self-escalation/iam-003-to-admin.md
+        - Hacking-the-cloud/Pathfinding.cloud/self-escalation/iam-005-to-admin.md
+        - Hacking-the-cloud/Pathfinding.cloud/self-escalation/iam-008-to-admin.md
+      - One Hop:
+        - Hacking-the-cloud/Pathfinding.cloud/one-hop/index.md
+      - Multi Hop:
+        - Hacking-the-cloud/Pathfinding.cloud/multi-hop/index.md
+      - Cross Account:
+        - Hacking-the-cloud/Pathfinding.cloud/cross-account/index.md
 
 copyright: Copyright &copy; 2026 Playroom Security Inc
 

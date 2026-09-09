@@ -10,7 +10,11 @@ authors:
 
 AWS accounced the launch of Regional NAT Gateway, a significant enhancement to their networking services. This new feature allows users to create NAT Gateways that are accessible across multiple Availability Zones (AZs) within a region, providing improved redundancy and simplified management.
 
-![Regiona-NAT](../../../.gitbook/assets/regional-NATGW.png)
+<!-- more -->
+
+![Regiona-NAT](../../assets/images/Blogs/regional-NATGW.png)
+
+
 
 The above diagrams illustrate the difference between the traditional NAT Gateway and the new Regional NAT Gateway. In the traditional setup, each AZ requires its own NAT Gateway, leading to increased costs and complexity. With Regional NAT Gateway, a single NAT Gateway can serve multiple AZs, reducing the need for deploying each in a Public Subnet of every AZ.
 

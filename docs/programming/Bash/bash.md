@@ -8,14 +8,14 @@ Bash scripts are typically written in plain text files with a .sh extension. The
 
 ??? info "**Bash scripts can be used to perform a wide range of tasks, including:**"
 
-```
-- Automating repetitive tasks
-- Running commands in parallel
-- Creating and managing processes
-- Working with files and directories
-- Handling user input
-- Integrating with other tools and scripts
-```
+    ```
+    - Automating repetitive tasks
+    - Running commands in parallel
+    - Creating and managing processes
+    - Working with files and directories
+    - Handling user input
+    - Integrating with other tools and scripts
+    ```
 
 In this section, we will cover the basics of Bash scripting, including variables, control structures, and functions. We will also explore some advanced topics, such as regular expressions and error handling.
 
@@ -114,4 +114,4 @@ This will print "Hello, John!".
 
 ### :simple-youtube: Recommended YouTube Videos:
 
-...and
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PNhq_4d-5ek?si=BxzoyF0qPQAJMEVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

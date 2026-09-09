@@ -6,7 +6,7 @@ title: AWS Organization
 
 With AWS Organization, you can centrally manage and govern your environment as you grow and scale your AWS resources. You can create multiple AWS accounts and group them into organizational units (OUs) to apply policies and manage billing.
 
-![AWS ORG](../../.gitbook/assets/root-organization.png)
+![AWS ORG](../assets/images/AWS/root-organization.png)
 
 #### :key: Key Features
 
