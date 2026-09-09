@@ -1,3 +1,3 @@
 # cloud-compliance
 
-![cloud-complaince](../../.gitbook/assets/cloud-compliance.png)
+![cloud-complaince](../assets/images/cloud-compliance.png)

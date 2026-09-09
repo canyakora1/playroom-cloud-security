@@ -1,6 +1,6 @@
 # Shared Responsibility Model
 
-![image](../../.gitbook/assets/cloud-responsility-matrix.png)
+![image](../assets/images/cloud-responsility-matrix.png)
 
 [azure-shared-responsibility-model](https://www.corestack.io/azure-security-tools/azure-shared-responsibility-model/)
 

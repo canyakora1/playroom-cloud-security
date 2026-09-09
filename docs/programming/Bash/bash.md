@@ -1,6 +1,4 @@
-# bash
-
-![bash](../../../.gitbook/assets/bash.png)
+![bash](../../assets/images/bash.png)
 
 ### :fontawesome-solid-code: Bash Scripting Basics
 

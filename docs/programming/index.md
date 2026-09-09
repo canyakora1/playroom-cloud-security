@@ -1,12 +1,15 @@
-# getting-started-with-scripting
-
+# Learn scripting
 ### :fontawesome-solid-code: Scripting Languages
 
-* ![cloud-sec](../../.gitbook/assets/bash.png) :fontawesome-solid-code: [**Scripting: Bash**](Bash/bash.md)
-* ![cloud-sec](../../.gitbook/assets/Python-Logo-PNG-Image.png) :fontawesome-solid-code: [**Scripting: Python**](Python3/getting-started-with-python3.md)
-* ![cloud-sec](../../.gitbook/assets/GO.png) :fontawesome-solid-code: [**Scripting: Go**](Go/go.md)
-* ![cloud-sec](../../.gitbook/assets/PowerShell-Windows-Logo.jpg) :fontawesome-solid-code: [**Scripting: Powershell**](Powershell/getting-started-with-powershell.md)
-* ![cloud-sec](../../.gitbook/assets/Node-js.png) :fontawesome-solid-code: [**Scripting: NodeJS**](Node-JS/getting-started-with-node-js.md)
+<div class="grid cards" markdown>
+
+* ![cloud-sec](../assets/images/bash.png) :fontawesome-solid-code: [**Scripting: Bash**](Bash/bash.md)
+* ![cloud-sec](../assets/images/Python-Logo-PNG-Image.png) :fontawesome-solid-code: [**Scripting: Python**](Python3/getting-started-with-python3.md)
+* ![cloud-sec](../assets/images/GO.png) :fontawesome-solid-code: [**Scripting: Go**](Go/go.md)
+* ![cloud-sec](../assets/images/PowerShell-Windows-Logo.jpg) :fontawesome-solid-code: [**Scripting: Powershell**](Powershell/getting-started-with-powershell.md)
+* ![cloud-sec](../assets/images/Node-js.png) :fontawesome-solid-code: [**Scripting: NodeJS**](Node-JS/getting-started-with-node-js.md)
+
+</div>
 
 ### :simple-javascript: Scripting Basics
 

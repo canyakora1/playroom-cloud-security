@@ -35,7 +35,6 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    - toc.integrate
   palette:
     - media: "(prefers-color-scheme)"
       toggle:

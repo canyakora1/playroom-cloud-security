@@ -21,6 +21,45 @@
     <strong>Twitter</strong>
   </a>
 {% endblock %}
+{% block content %}
+  {% if page.url in ["", "/", "index.html"] %}
+    {{ super() }}
+  {% else %}
+    {% set article_categories = page.meta.categories or page.meta.tags or [] %}
+    {% if article_categories is string %}
+      {% set article_categories = [article_categories] %}
+    {% endif %}
+    {% set article_words = ((page.content|striptags|length) // 5) if page.content else 0 %}
+    {% set article_read_time = ((article_words // 220) + 1) if article_words else 1 %}
+    {% set article_date = page.meta.date.created if page.meta.date and page.meta.date.created else page.meta.date if page.meta.date else None %}
+
+    <div class="mdx-article-shell">
+      <article class="mdx-article md-typeset">
+        <header class="mdx-article__header">
+          <p class="mdx-kicker">Guide</p>
+          <h1>{{ page.title }}</h1>
+          <div class="mdx-article-meta">
+            {% if article_categories %}
+              <div class="mdx-article-tags">
+                {% for category in article_categories %}
+                  <span class="mdx-article-tag">{{ category }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+            <div class="mdx-article-stats">
+              {% if article_date %}
+                <span>{{ article_date }}</span>
+              {% endif %}
+              <span>{{ article_read_time }} min read</span>
+            </div>
+          </div>
+        </header>
+        {{ super() }}
+      </article>
+    </div>
+  {% endif %}
+{% endblock %}
+
 {% block scripts %}
   {{ super() }}
   <script src="{{ 'assets/javascripts/custom.95054b18.min.js' | url }}"></script>
