@@ -1,4 +1,5 @@
-# Learn scripting
+## Learn scripting
+
 ## :fontawesome-solid-code: Scripting Languages
 
 <div class="grid cards" markdown>

@@ -1,4 +1,7 @@
-# Kubernetes
+---
+title: Kubernetes
+---
+
 
 <div class="grid cards" markdown>
 

@@ -1,4 +1,7 @@
-# Infrastructure as Code
+---
+title: Infrastructure as Code
+---
+
 
 <div class="grid cards" markdown>
 
