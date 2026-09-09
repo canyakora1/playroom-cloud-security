@@ -15,10 +15,10 @@ plabs output iam-002-to-admin
   "attack_path": "User (pl-prod-iam-002-to-admin-starting-user) → iam:CreateAccessKey → User (pl-prod-iam-002-to-admin-target-user) → Admin Access → ssm:GetParameter → CTF flag",
   "flag_ssm_parameter_arn": "arn:aws:ssm:us-east-1:111111111111:parameter/pathfinding-labs/flags/iam-002-to-admin",
   "flag_ssm_parameter_name": "/pathfinding-labs/flags/iam-002-to-admin",
-  "starting_user_access_key_id": "AKIAVRUVSVUFH6ZIA3FY",
+  "starting_user_access_key_id": << REDACTED >>,
   "starting_user_arn": "arn:aws:iam::111111111111:user/pl-prod-iam-002-to-admin-starting-user",
   "starting_user_name": "pl-prod-iam-002-to-admin-starting-user",
-  "starting_user_secret_access_key": "MVWI4MCooQJvwuuyDOidKLqyAlCE7ZpK7gvNZWpq"
+  "starting_user_secret_access_key": << REDACTED >>
 }
 ```
 
