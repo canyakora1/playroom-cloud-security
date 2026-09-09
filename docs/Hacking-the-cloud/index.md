@@ -1,4 +1,6 @@
-# Capture The Cloud
+---
+title: Capture The Cloud
+---
 
 
 <div class="grid cards" markdown>

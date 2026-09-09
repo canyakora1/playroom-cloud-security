@@ -2,6 +2,7 @@
 title: PathFinding.cloud
 ---
 
+
 ![pathfinging.cloud](../../assets/images/Pathfinding/pathfinding.cloud.png)
 
 Visit the below link to start started:
